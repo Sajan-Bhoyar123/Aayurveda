@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>उमेद केअर सेंटर | ज्येष्ठ नागरिक व अंथरुणाला खिळलेल्या रुग्णांची सेवा (पुणे)</title>
+    <meta name="description" content="उमेद केअर सेंटर (ओम प्रतिष्ठान चॅरिटेबल ट्रस्टचा प्रकल्प) - पुण्यातील ज्येष्ठ नागरिक, पॅरालिसिस, डिमेंशिया आणि अंथरुणाला खिळलेल्या रुग्णांसाठी २४ तास वैद्यकीय व नर्सिंग सेवा.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        umed: {
+                            red: '#D82E2B',
+                            'red-dark': '#B91C1C',
+                            'red-light': '#FEE2E2',
+                            'red-50': '#FEF2F2',
+                            green: '#6EA323',
+                            'green-dark': '#558217',
+                            'green-light': '#ECF5DE',
+                            'green-50': '#F4F9EB',
+                            gold: '#F59E0B',
+                            'gold-dark': '#D97706',
+                            'gold-light': '#FEF3C7',
+                            navy: '#0F172A',
+                            slate: '#1E293B',
+                            muted: '#64748B',
+                            border: '#E2E8F0',
+                            surface: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            color: #1E293B;
+            background-color: #FFFFFF;
+        }
+
+        .medical-card {
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s ease;
+        }
+        .medical-card:hover {
+            border-color: #CBD5E1;
+            box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08);
+            transform: translateY(-4px);
+        }
+        .nav-item {
+            position: relative;
+            padding: 0.5rem 0;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: #334155;
+            white-space: nowrap;
+            transition: color 0.2s ease;
+        }
+        .nav-item:hover {
+            color: #D82E2B;
+        }
+        .nav-item.active {
+            color: #D82E2B;
+            font-weight: 700;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2.5px;
+            background-color: #D82E2B;
+            border-radius: 9999px;
+            transition: width 0.25s ease;
+        }
+        .nav-item:hover::after,
+        .nav-item.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-umed-red selection:text-white">
+
+    <!-- Top Utility & Trust Bar -->
+    <div class="bg-[#0B132B] text-slate-300 text-xs py-2 px-4 md:px-8 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
+            <div class="flex items-center gap-2 truncate">
+                <span class="inline-block w-2 h-2 rounded-full bg-umed-green animate-pulse shrink-0"></span>
+                <span class="font-semibold text-white tracking-wide truncate">ओम प्रतिष्ठान चॅरिटेबल ट्रस्ट</span>
+                <span class="hidden sm:inline text-slate-500">•</span>
+                <span class="hidden sm:inline text-slate-400">पुण्यात २००० पासून अविरत सेवा</span>
+            </div>
+            
+            <div class="flex items-center gap-3 sm:gap-4 text-slate-300 text-xs shrink-0">
+                <div class="hidden md:flex items-center gap-1.5 text-slate-400">
+                    <svg class="w-3.5 h-3.5 text-umed-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span>भेट: स. १० ते सायं. ७</span>
+                </div>
+                
+                <span class="hidden md:inline text-slate-700">|</span>
+
+                <a href="tel:08080053311" class="hidden sm:flex font-bold text-white hover:text-umed-gold transition-colors items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-umed-red animate-ping"></span>
+                    <span>२४/७ हेल्पलाईन: <span class="text-umed-gold font-extrabold tracking-wide">080800 53311</span></span>
+                </a>
+
+                <span class="hidden sm:inline text-slate-700">|</span>
+
+                <div class="inline-flex items-center bg-slate-800/90 rounded-md p-0.5 border border-slate-700 text-[11px] font-bold">
+                    <a href="index.html" class="text-slate-300 hover:text-white px-2 py-0.5 transition-colors">EN</a>
+                    <span class="bg-umed-red text-white px-2 py-0.5 rounded shadow-xs">मराठी</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 h-20 md:h-22 flex items-center justify-between gap-6">
+            
+            <a href="index-mr.html" class="flex items-center shrink-0 pr-2 transition-transform duration-200 hover:scale-[1.02]" aria-label="Umed Care Centre Home">
+                <img src="umed-logo.png?v=4" alt="Umed Care Centre - A Ray of Hope" class="h-14 md:h-16 w-auto object-contain">
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px]">
+                <a href="#hero" class="nav-item active">मुख्य पृष्ठ</a>
+                <a href="#about" class="nav-item">आमच्याबद्दल</a>
+                <a href="#services" class="nav-item">आरोग्य सेवा</a>
+                <a href="specialized-care.html" class="nav-item flex items-center gap-1.5">
+                    <span>विशेष काळजी</span>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wide bg-umed-green-light text-umed-green-dark px-1.5 py-0.5 rounded-full border border-umed-green/20">७ विकार</span>
+                </a>
+                <a href="#why-trust" class="nav-item">विश्वास का?</a>
+                <a href="#support" class="nav-item">ट्रस्टला पाठिंबा</a>
+                <a href="#contact" class="nav-item">संपर्क</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-3.5 shrink-0">
+                <a href="tel:08080053311" class="hidden xl:inline-flex items-center gap-2 text-sm font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 border border-slate-200/90 px-4 py-2.5 rounded-full transition-all duration-200 shadow-2xs whitespace-nowrap">
+                    <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>080800 53311</span>
+                </a>
+
+                <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-umed-red to-umed-red-dark hover:from-umed-red-dark hover:to-red-800 text-white font-bold text-sm px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 whitespace-nowrap">
+                    <span>भेट निश्चित करा</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <div class="flex lg:hidden items-center gap-3">
+                <a href="tel:08080053311" class="p-2 text-umed-red bg-umed-red-50 rounded-full" aria-label="Call Helpline">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </a>
+                <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" class="p-2 text-slate-800 hover:text-umed-red focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-5 space-y-3.5 shadow-lg">
+            <a href="#hero" class="mobile-nav-link block font-bold text-umed-red text-base py-1">मुख्य पृष्ठ</a>
+            <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">आमच्याबद्दल</a>
+            <a href="#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">आरोग्य सेवा</a>
+            <a href="specialized-care.html" class="mobile-nav-link font-semibold text-umed-navy flex items-center justify-between py-1">
+                <span>विशेष काळजी (Specialized Care)</span>
+                <span class="text-xs bg-umed-green-light text-umed-green-dark px-2 py-0.5 rounded-full font-bold">New</span>
+            </a>
+            <a href="#why-trust" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">विश्वास का?</a>
+            <a href="#support" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">ट्रस्टला पाठिंबा</a>
+            <a href="#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">संपर्क</a>
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+                <a href="tel:08080053311" class="text-center font-bold text-white bg-umed-red py-3.5 rounded-xl shadow-md flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>कॉल करा: 080800 53311</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-b from-slate-50 via-white to-white pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 bg-umed-green-50 border border-umed-green/20 px-3.5 py-1.5 rounded-full text-xs md:text-sm font-semibold text-umed-green-dark">
+                        <span class="w-2 h-2 rounded-full bg-umed-green"></span>
+                        <span>वृद्ध व अंथरुणाला खिळलेल्या रुग्णांसाठी आशेचा किरण</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-umed-navy leading-[1.2] tracking-tight">
+                        पुण्यात विचारपूर्वक डिझाइन केलेली ज्येष्ठ नागरिक व रुग्णसेवा.
+                    </h1>
+
+                    <p class="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl font-normal">
+                        ज्येष्ठ नागरिक आणि अंथरुणावर असलेल्या रुग्णांसाठी २४ तास वैद्यकीय, परिचारिका आणि घरगुती प्रेमाचे सुरक्षित वातावरण. <strong class="text-slate-900 font-semibold">ओम प्रतिष्ठान चॅरिटेबल ट्रस्ट</strong> तर्फे २००० सालापासून अविरत कार्यरत.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-700 font-medium">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>२४ तास प्रशिक्षित नर्सेस व वॉर्ड बॉय</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>दररोज डॉक्टर तपासणी व दिवसातून ३ वेळा मॉनिटरिंग</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>पॅरालिसिस, डिमेंशिया व बेडसोर्स विशेष काळजी</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>पौष्टिक आहार व नळीवाटे (NG Tube) अन्न देण्याची सोय</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-wrap items-center gap-4">
+                        <a href="tel:08080053311" class="bg-umed-red hover:bg-umed-red-dark text-white font-bold py-4 px-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-base flex items-center gap-3">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+                            <span>आमच्या टीमशी बोला</span>
+                        </a>
+
+                        <a href="specialized-care.html" class="bg-white hover:bg-slate-50 text-slate-800 font-bold py-4 px-7 rounded-xl border border-slate-300 shadow-xs hover:border-slate-400 transition-all duration-200 text-base flex items-center gap-2">
+                            <span>विशेष काळजी (Specialized Care)</span>
+                            <svg class="w-4 h-4 text-umed-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+
+                    <p class="text-xs text-slate-500 font-medium pt-1">
+                        २४ तास आपत्कालीन प्रवेश: <strong class="text-umed-navy">080800 53311</strong> &bull; प्रत्यक्ष भेटीसाठी स्वागत आहे.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5] relative">
+                            <img src="hero-bg-wide.jpg" alt="उमेद केअर सेंटर" class="w-full h-full object-cover object-center">
+                            <div class="absolute inset-0 bg-gradient-to-t from-umed-navy/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 text-white">
+                                <span class="bg-umed-red text-white text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md inline-block mb-2">२००० पासून</span>
+                                <h3 class="font-serif text-xl font-bold leading-snug">"प्रत्येक आयुष्याला प्रेम, आदर आणि उत्कृष्ट वैद्यकीय काळजी मिळायलाच हवी."</h3>
+                                <p class="text-xs text-slate-200 mt-1">उमेद केअर सेंटर &bull; पुणे</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-4 -left-4 sm:-left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3.5">
+                            <div class="w-12 h-12 rounded-xl bg-umed-gold-light text-umed-gold-dark flex items-center justify-center font-extrabold text-xl">
+                                २४+
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">विश्वसनीय अनुभव</p>
+                                <p class="text-sm font-bold text-umed-navy">वर्षांची समर्पित सेवा</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 md:py-28 bg-slate-50 border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-green-dark bg-umed-green-light px-3 py-1 rounded-md border border-umed-green/20 mb-3">
+                    आमच्या सेवेचा दर्जा
+                </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-umed-navy tracking-tight">
+                    सर्वसमावेशक आरोग्य सेवा
+                </h2>
+                <p class="text-slate-600 text-base md:text-lg mt-3">
+                    प्रशिक्षित वैद्यकीय कर्मचारी, दररोजची डॉक्टर तपासणी आणि आपत्कालीन वैद्यकीय व्यवस्थेसह संपूर्ण आधार.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1 -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Long-Term Care" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">सेवा ०१</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">दीर्घकालीन काळजी (Long-Term Care)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">वृद्ध आणि अंथरुणाला खिळलेल्या रुग्णांसाठी दयाळू दीर्घकालीन काळजी आणि दैनंदिन आधार.</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nurses" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">सेवा ०२</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">प्रशिक्षित नर्सेस व केअर स्टाफ</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">संपूर्णपणे प्रशिक्षित परिचारिका, आया आणि वॉर्ड बॉय स्टाफ समर्पित रुग्णसेवा प्रदान करतात.</p>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">सेवा ०३</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">डॉक्टरांची तपासणी व मॉनिटरिंग</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">नियमित डॉक्टर तपासणीसह दिवसातून ३ वेळा तापमान, ऑक्सिजन आणि पल्स मॉनिटरिंग.</p>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Specialist" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">सेवा ०४</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">तज्ज्ञ डॉक्टरांचा सल्ला</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">ऑर्थोपेडिक, फिजिशियन, सर्जन, फिजिओथेरपिस्ट आणि मानसोपचारतज्ज्ञांचा सल्ला आवश्यकतेनुसार.</p>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1516841273335-e39b37888115?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bedridden" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-red text-white text-[11px] font-bold px-2.5 py-1 rounded-md">सेवा ०५</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">अंथरुणावर व विशेष काळजी</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">कोमा, पॅरालिसिस, डिमेंशिया, अल्झायमर, बेडसोर्स असलेल्या रुग्णांसाठी २४/७ वैद्यकीय आधार.</p>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diet" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">सेवा ०६</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">सानुकूलित आहार व फिडिंग सपोर्ट</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">रुग्णाच्या स्थितीनुसार पौष्टिक आहार, तसेच तोंडावाटे आणि नळीवाटे (NG Tube) अन्न देण्याची सोय.</p>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="bg-white rounded-2xl p-6 md:p-8 medical-card lg:col-span-3 flex flex-col lg:flex-row items-center gap-8 border-l-4 border-l-umed-green">
+                    <div class="w-full lg:w-1/3 h-52 rounded-xl overflow-hidden shrink-0 bg-slate-100 relative">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Exercise" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-umed-green text-white text-[11px] font-bold px-2.5 py-1 rounded-md">सेवा ०७</div>
+                    </div>
+                    <div class="w-full lg:w-2/3 space-y-3">
+                        <h3 class="text-2xl font-bold text-umed-navy">व्यायाम, पाठीची काळजी आणि वैयक्तिक आधार</h3>
+                        <p class="text-slate-600 leading-relaxed text-base">
+                            दररोज सहाय्यक व्यायाम, पाठीची काळजी, स्थिती बदलणे (repositioning), वैयक्तिक स्वच्छता आणि रुग्णाच्या आरामासाठी सर्वतोपरी आधार.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-red bg-umed-red-50 px-3 py-1 rounded-md border border-umed-red/20">
+                        संपर्क साधा
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-umed-navy leading-tight">
+                        उमेद केअर सेंटरला प्रत्यक्ष भेट द्या.
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        आमच्या खोल्या, जेवणाचे हॉल आणि स्वच्छ परिसर पाहण्यासाठी आपले स्वागत आहे. प्रत्यक्ष भेट देऊन आपल्या प्रिय व्यक्तीसाठी खात्री करा.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-umed-red text-white flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-slate-500 font-bold">२४/७ हेल्पलाईन व प्रवेश</p>
+                                <a href="tel:08080053311" class="text-lg font-bold text-umed-navy hover:text-umed-red transition-colors">080800 53311</a>
+                                <p class="text-xs text-umed-green-dark font-medium mt-0.5">२४ तास सेवा सुरू आहे</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-umed-navy text-white flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-slate-500 font-bold">पत्ता</p>
+                                <p class="text-sm font-bold text-umed-navy">उमेद केअर सेंटर, पुणे, महाराष्ट्र</p>
+                                <p class="text-xs text-slate-500 mt-0.5">भेट देण्याची वेळ: सकाळी १०:०० ते संध्याकाळी ७:००</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 md:p-10 rounded-3xl border border-slate-200 shadow-xl">
+                        <h3 class="text-2xl font-bold text-umed-navy mb-2">माहिती व सल्लामसलत मिळवा</h3>
+                        <p class="text-slate-600 text-sm mb-6">फॉर्म भरा, आमची प्रवेश टीम त्वरित संपर्क साधेल.</p>
+
+                        <form id="contact-form-mr" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">पूर्ण नाव *</label>
+                                    <input type="text" placeholder="तुमचे नाव" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">फोन नंबर *</label>
+                                    <input type="tel" placeholder="080800 53311" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">संदेश किंवा रुग्णाची माहिती</label>
+                                <textarea rows="4" placeholder="रुग्णाचे वय, आजार आणि आवश्यक सेवेबद्दल लिहा..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-umed-red hover:bg-umed-red-dark text-white font-bold py-4 px-6 rounded-xl transition duration-200 shadow-md text-base">
+                                विनंती पाठवा
+                            </button>
+
+                            <div id="form-feedback-mr" class="hidden text-center text-sm font-semibold text-umed-green-dark bg-umed-green-light p-3.5 rounded-xl border border-umed-green/30">
+                                धन्यवाद! तुमची विनंती प्राप्त झाली आहे. आमची टीम लवकरच आपल्याशी संपर्क साधेल.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-umed-navy text-slate-400 pt-16 pb-24 lg:pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 text-center sm:text-left">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-6 pb-8 border-b border-slate-800">
+                <img src="umed-logo-white.png?v=4" alt="Umed Logo" class="h-14 w-auto object-contain">
+                <div class="text-xs text-slate-300">
+                    <p>ओम प्रतिष्ठान चॅरिटेबल ट्रस्टचा मानवतावादी आरोग्य प्रकल्प &bull; पुणे</p>
+                    <p class="font-bold text-white mt-1">२४ तास हेल्पलाईन: 080800 53311</p>
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>&copy; २०२६ उमेद केअर सेंटर. सर्व हक्क राखीव.</p>
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="hover:text-slate-300">English</a>
+                    <span>&bull;</span>
+                    <a href="index-mr.html" class="hover:text-slate-300">मराठी</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile Sticky Helpline / Action Bar -->
+    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 px-4 py-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between gap-3">
+        <a href="tel:08080053311" class="flex-1 bg-umed-red hover:bg-umed-red-dark text-white font-bold text-xs sm:text-sm py-3 px-3 rounded-xl flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]">
+            <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span>कॉल: 080800 53311</span>
+        </a>
+        <a href="#contact" class="flex-1 bg-umed-navy hover:bg-slate-800 text-white font-bold text-xs sm:text-sm py-3 px-3 rounded-xl flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]">
+            <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            <span>भेट ठरवा</span>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isOpened = !mobileMenu.classList.toggle('hidden');
+                    if (menuIcon) {
+                        if (isOpened) {
+                            menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        } else {
+                            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        }
+                    }
+                });
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        if (menuIcon) {
+                            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        }
+                    });
+                });
+            }
+
+            const contactForm = document.getElementById('contact-form-mr');
+            const formFeedback = document.getElementById('form-feedback-mr');
+            if (contactForm && formFeedback) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    formFeedback.classList.remove('hidden');
+                    contactForm.reset();
+                    setTimeout(() => {
+                        formFeedback.classList.add('hidden');
+                    }, 6000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umed Care Centre | Compassionate Elder & Bedridden Care in Pune</title>
+    <meta name="description" content="Umed Care Centre, a project of OM Prathishthan Charitable Trust, provides premium 24/7 medically supported elder care, bedridden care, dementia, and paralysis assistance in Pune.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts: Plus Jakarta Sans for clean, professional medical typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        umed: {
+                            red: '#D82E2B',
+                            'red-dark': '#B91C1C',
+                            'red-light': '#FEE2E2',
+                            'red-50': '#FEF2F2',
+                            green: '#6EA323',
+                            'green-dark': '#558217',
+                            'green-light': '#ECF5DE',
+                            'green-50': '#F4F9EB',
+                            gold: '#F59E0B',
+                            'gold-dark': '#D97706',
+                            'gold-light': '#FEF3C7',
+                            navy: '#0F172A',
+                            slate: '#1E293B',
+                            muted: '#64748B',
+                            border: '#E2E8F0',
+                            surface: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            color: #1E293B;
+            background-color: #FFFFFF;
+        }
+
+        /* Subtle professional animation */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Clean medical card styling */
+        .medical-card {
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s ease;
+        }
+        .medical-card:hover {
+            border-color: #CBD5E1;
+            box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08);
+            transform: translateY(-4px);
+        }
+        .nav-item {
+            position: relative;
+            padding: 0.5rem 0;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: #334155;
+            white-space: nowrap;
+            transition: color 0.2s ease;
+        }
+        .nav-item:hover {
+            color: #D82E2B;
+        }
+        .nav-item.active {
+            color: #D82E2B;
+            font-weight: 700;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2.5px;
+            background-color: #D82E2B;
+            border-radius: 9999px;
+            transition: width 0.25s ease;
+        }
+        .nav-item:hover::after,
+        .nav-item.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-umed-red selection:text-white">
+
+    <!-- Top Utility & Trust Bar -->
+    <div class="bg-[#0B132B] text-slate-300 text-xs py-2 px-4 md:px-8 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
+            <!-- Left Trust Mission -->
+            <div class="flex items-center gap-2 truncate">
+                <span class="inline-block w-2 h-2 rounded-full bg-umed-green animate-pulse shrink-0"></span>
+                <span class="font-semibold text-white tracking-wide truncate">OM Prathishthan Charitable Trust</span>
+                <span class="hidden sm:inline text-slate-500">•</span>
+                <span class="hidden sm:inline text-slate-400">Dedicated Elder & Bedridden Care in Pune (Since 2000)</span>
+            </div>
+            
+            <!-- Right Actions: Admissions, Helpline & Language -->
+            <div class="flex items-center gap-3 sm:gap-4 text-slate-300 text-xs shrink-0">
+                <div class="hidden md:flex items-center gap-1.5 text-slate-400">
+                    <svg class="w-3.5 h-3.5 text-umed-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span>Visiting: 10 AM – 7 PM</span>
+                </div>
+                
+                <span class="hidden md:inline text-slate-700">|</span>
+
+                <a href="tel:08080053311" class="hidden sm:flex font-bold text-white hover:text-umed-gold transition-colors items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-umed-red animate-ping"></span>
+                    <span>24/7 Helpline: <span class="text-umed-gold font-extrabold tracking-wide">080800 53311</span></span>
+                </a>
+
+                <span class="hidden sm:inline text-slate-700">|</span>
+
+                <!-- Language Switcher in Top Bar -->
+                <div class="inline-flex items-center bg-slate-800/90 rounded-md p-0.5 border border-slate-700 text-[11px] font-bold">
+                    <span class="bg-umed-red text-white px-2 py-0.5 rounded shadow-xs">EN</span>
+                    <a href="index-mr.html" class="text-slate-300 hover:text-white px-2 py-0.5 transition-colors">मराठी</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 h-20 md:h-22 flex items-center justify-between gap-6">
+            
+            <!-- Left: Logo with Dedicated Breathing Room -->
+            <a href="index.html" class="flex items-center shrink-0 pr-2 transition-transform duration-200 hover:scale-[1.02]" aria-label="Umed Care Centre Home">
+                <img src="umed-logo.png?v=4" alt="Umed Care Centre - A Ray of Hope" class="h-14 md:h-16 w-auto object-contain">
+            </a>
+
+            <!-- Center: Clean, Single-Line, Uncluttered Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px]">
+                <a href="#hero" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About Us</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="specialized-care.html" class="nav-item flex items-center gap-1.5">
+                    <span>Specialized Care</span>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wide bg-umed-green-light text-umed-green-dark px-1.5 py-0.5 rounded-full border border-umed-green/20">7 Conditions</span>
+                </a>
+                <a href="#why-trust" class="nav-item">Why Choose Us</a>
+                <a href="#support" class="nav-item">Support Us</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <!-- Right: Quick Phone Dial + Primary Book Visit Button -->
+            <div class="hidden sm:flex items-center gap-3.5 shrink-0">
+                <a href="tel:08080053311" class="hidden xl:inline-flex items-center gap-2 text-sm font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 border border-slate-200/90 px-4 py-2.5 rounded-full transition-all duration-200 shadow-2xs whitespace-nowrap">
+                    <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>080800 53311</span>
+                </a>
+
+                <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-umed-red to-umed-red-dark hover:from-umed-red-dark hover:to-red-800 text-white font-bold text-sm px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 whitespace-nowrap">
+                    <span>Book a Visit</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="flex lg:hidden items-center gap-3">
+                <a href="tel:08080053311" class="p-2 text-umed-red bg-umed-red-50 rounded-full" aria-label="Call Helpline">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </a>
+                <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation Menu" class="p-2 text-slate-800 hover:text-umed-red focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-5 space-y-3.5 shadow-lg">
+            <a href="#hero" class="mobile-nav-link block font-bold text-umed-red text-base py-1">Home</a>
+            <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">About Us</a>
+            <a href="#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Services</a>
+            <a href="specialized-care.html" class="mobile-nav-link font-semibold text-umed-navy flex items-center justify-between py-1">
+                <span>Specialized Care</span>
+                <span class="text-xs bg-umed-green-light text-umed-green-dark px-2 py-0.5 rounded-full font-bold">7 Conditions</span>
+            </a>
+            <a href="#why-trust" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Why Choose Us</a>
+            <a href="#support" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Support Us</a>
+            <a href="#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Contact</a>
+            
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-2.5">
+                <a href="tel:08080053311" class="text-center font-bold text-white bg-umed-red py-3 rounded-xl shadow-md flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>Call Helpline: 080800 53311</span>
+                </a>
+                <a href="#contact" class="mobile-nav-link text-center font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 py-3 rounded-xl flex items-center justify-center gap-2">
+                    <span>Schedule a Facility Tour</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Professional Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-b from-slate-50 via-white to-white pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Clear, Professional Healthcare Value Proposition -->
+                <div class="lg:col-span-7 space-y-6">
+                    
+                    <div class="inline-flex items-center gap-2.5 bg-umed-green-50 border border-umed-green/20 px-3.5 py-1.5 rounded-full text-xs md:text-sm font-semibold text-umed-green-dark">
+                        <span class="w-2 h-2 rounded-full bg-umed-green"></span>
+                        <span>A Ray of Hope for Elderly & Bedridden Loved Ones</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold text-umed-navy leading-[1.18] tracking-tight">
+                        Thoughtfully Designed Elder & Bedridden Care in Pune.
+                    </h1>
+
+                    <p class="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl font-normal">
+                        Providing a secure, homely, and medically equipped sanctuary for elderly residents who deserve continuous compassion, dignity, and professional clinical care. Backed by <strong class="text-slate-900 font-semibold">OM Prathishthan Charitable Trust</strong> since 2000.
+                    </p>
+
+                    <!-- Key Clinical Trust Bullets -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-700 font-medium">
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>Qualified 24/7 Nurses & Ward Boys</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>Daily Doctor Visits & Vitals 3× a Day</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>Paralysis, Dementia & Bedsore Protocols</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>Nutritious & NG Tube Feeding Support</span>
+                        </div>
+                    </div>
+
+                    <!-- Call to Actions -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+                        <a href="tel:08080053311" class="w-full sm:w-auto bg-umed-red hover:bg-umed-red-dark text-white font-bold py-3.5 sm:py-4 px-6 sm:px-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-sm sm:text-base flex items-center justify-center gap-2.5">
+                            <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+                            <span>Speak With Care Team</span>
+                        </a>
+
+                        <a href="specialized-care.html" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 font-bold py-3.5 sm:py-4 px-6 sm:px-7 rounded-xl border border-slate-300 shadow-xs hover:border-slate-400 transition-all duration-200 text-sm sm:text-base flex items-center justify-center gap-2">
+                            <span>Specialized Care Programs</span>
+                            <svg class="w-4 h-4 text-umed-red shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- Live Helpline Note -->
+                    <p class="text-xs text-slate-500 font-medium pt-1">
+                        Emergency admission line active 24 Hours: <strong class="text-umed-navy">080800 53311</strong> &bull; Walk-ins welcome for family tours.
+                    </p>
+
+                </div>
+
+                <!-- Right Column: Clean Medical Trust Visual Framing -->
+                <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Primary Image Frame -->
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-[4/5] relative">
+                            <img src="hero-bg-wide.jpg" alt="Compassionate senior care resident at Umed" class="w-full h-full object-cover object-center">
+                            
+                            <!-- Bottom Gradient for contrast -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-umed-navy/80 via-transparent to-transparent"></div>
+                            
+                            <div class="absolute bottom-5 sm:bottom-6 left-5 sm:left-6 right-5 sm:right-6 text-white">
+                                <span class="bg-umed-red text-white text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md inline-block mb-2">Since 2000</span>
+                                <h3 class="font-serif text-lg sm:text-xl font-bold leading-snug">"Every life deserves warmth, dignity, and tireless care."</h3>
+                                <p class="text-xs text-slate-200 mt-1">Umed Care Centre &bull; Pune</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stat Card 1: Years of Service -->
+                        <div class="absolute top-3 left-3 sm:-top-4 sm:-left-6 bg-white/95 backdrop-blur-xs p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-xl border border-slate-100 flex items-center gap-2.5 sm:gap-3.5 max-w-[210px] sm:max-w-none">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-umed-gold-light text-umed-gold-dark flex items-center justify-center font-extrabold text-lg sm:text-xl shrink-0">
+                                24+
+                            </div>
+                            <div>
+                                <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Established Record</p>
+                                <p class="text-xs sm:text-sm font-bold text-umed-navy leading-tight">Years of Trust in Pune</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Stat Card 2: Doctor Supervised -->
+                        <div class="absolute bottom-3 right-3 sm:-bottom-5 sm:-right-6 bg-white/95 backdrop-blur-xs p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-xl border border-slate-100 flex items-center gap-2.5 sm:gap-3.5 max-w-[210px] sm:max-w-none">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Daily Clinical Rounds</p>
+                                <p class="text-xs sm:text-sm font-bold text-umed-navy leading-tight">Doctor & Vitals Check</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Credentials Strip -->
+    <section class="py-8 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
+                
+                <div class="p-3 sm:p-4 bg-white md:bg-transparent rounded-xl md:rounded-none border md:border-0 border-slate-200/80 shadow-2xs md:shadow-none">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-red">2000</p>
+                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Foundation Year</p>
+                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">24+ Years Non-Profit Care</p>
+                </div>
+
+                <div class="p-3 sm:p-4 bg-white md:bg-transparent rounded-xl md:rounded-none border md:border-0 md:border-l border-slate-200/80 shadow-2xs md:shadow-none">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-green">24×7</p>
+                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Nurses & Attendants</p>
+                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Continuous On-Bed Care</p>
+                </div>
+
+                <div class="p-3 sm:p-4 bg-white md:bg-transparent rounded-xl md:rounded-none border md:border-0 md:border-l border-slate-200/80 shadow-2xs md:shadow-none">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-gold-dark">3× Daily</p>
+                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Vitals Evaluation</p>
+                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">BP, Oxygen & Temp Tracking</p>
+                </div>
+
+                <div class="p-3 sm:p-4 bg-white md:bg-transparent rounded-xl md:rounded-none border md:border-0 md:border-l border-slate-200/80 shadow-2xs md:shadow-none">
+                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-navy">100%</p>
+                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Verified Personnel</p>
+                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Background-Checked Staff</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section: Credible, Charitable Background -->
+    <section id="about" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Curated Authentic Image Presentation -->
+                <div class="lg:col-span-5">
+                    <div class="relative">
+                        <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+                            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Attentive nurse providing care at Umed" class="w-full h-full object-cover">
+                        </div>
+                        <div class="mt-4 p-5 bg-umed-green-50 rounded-2xl border border-umed-green/20">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-umed-green text-white flex items-center justify-center shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-umed-navy text-sm">OM Prathishthan Charitable Trust</h4>
+                                    <p class="text-xs text-slate-600">A registered humanitarian mission ensuring elderly dignity in Maharashtra.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block uppercase tracking-wider text-xs font-bold text-umed-red bg-umed-red-50 px-3 py-1 rounded-md border border-umed-red/20">
+                        About Umed Care Centre
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-4xl font-bold text-umed-navy leading-tight">
+                        The Standard of Care Your Loved One Has Always Deserved.
+                    </h2>
+
+                    <p class="text-slate-600 leading-relaxed text-base md:text-lg">
+                        Caring for an aging, sick, or bedridden parent is a deeply emotional responsibility. When physical requirements exceed what can be safely managed at home, Umed Care Centre steps in as an extension of your own family.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed text-base">
+                        Our nurses and attendants are professionally trained, background-verified, and assigned with consistency — so our residents never feel like they are in an impersonal clinic or being attended to by strangers.
+                    </p>
+
+                    <!-- Quote Block with Trust Colors -->
+                    <div class="p-6 md:p-8 bg-slate-50 border-l-4 border-umed-red rounded-r-2xl shadow-xs">
+                        <p class="text-slate-700 italic text-base md:text-lg leading-relaxed font-medium">
+                            "Emergency call bells in every room, 24×7 CCTV, night nursing rounds every two hours, and a visiting physician who reviews every resident regularly. We want families to feel confident, relieved, and supported."
+                        </p>
+                        <p class="text-xs font-bold text-umed-navy mt-3 uppercase tracking-wider">
+                            &mdash; Medical & Administration Team, Umed Care Centre
+                        </p>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">2-Hourly Night Rounds</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Physician-Led Health Reviews</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Hygienic Sponging & Diaper Care</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Compassionate Family Updates</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section: 7 Healthcare Services -->
+    <section id="services" class="py-20 md:py-28 bg-slate-50 border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-green-dark bg-umed-green-light px-3 py-1 rounded-md border border-umed-green/20 mb-3">
+                    Our Standard of Care
+                </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-umed-navy tracking-tight">
+                    Healthcare Services
+                </h2>
+                <p class="text-slate-600 text-base md:text-lg mt-3">
+                    Structured daily care routines supported by trained medical staff, regular doctor check-ups, and specialized clinical protocols.
+                </p>
+            </div>
+
+            <!-- 7 Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. Long-Term Care -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Long-Term Elder Care" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+                                01 &bull; Core Care
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Long-Term Care</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Compassionate long-term care and daily support for elderly and bedridden patients who require continuous assistance in a safe, homely setting.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                        <span>Assisted Living</span>
+                        <span class="text-umed-green font-bold">&bull; 24/7 Monitored</span>
+                    </div>
+                </div>
+
+                <!-- 2. Qualified Nurses & Care Staff -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Qualified Nurses & Care Staff" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+                                02 &bull; Professional Staff
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Qualified Nurses & Care Staff</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Fully qualified nurses, Aaya and Ward Boy staff providing dedicated, compassionate, and patient-centered clinical care at all hours.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                        <span>Background Verified</span>
+                        <span class="text-umed-green font-bold">&bull; Loving Support</span>
+                    </div>
+                </div>
+
+                <!-- 3. Doctor Check-up & Health Monitoring -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor Check-up & Health Monitoring" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+                                03 &bull; Clinical Oversight
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Doctor Check-up & Health Monitoring</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Regular doctor check-ups with rigorous temperature, oxygen, and pulse monitoring three times a day, backed by 24-hour emergency protocols.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                        <span>3× Daily Vitals</span>
+                        <span class="text-umed-green font-bold">&bull; Daily Physician Visit</span>
+                    </div>
+                </div>
+
+                <!-- 4. Specialist Consultation -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Specialist Medical Consultation" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+                                04 &bull; Multi-Specialty
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Specialist Consultation</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Prompt consultations with Orthopedic Specialists, Physicians, Surgeons, Physiotherapists, and Psychiatrists as needed for each resident.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                        <span>Multi-Disciplinary</span>
+                        <span class="text-umed-green font-bold">&bull; On-Demand Doctors</span>
+                    </div>
+                </div>
+
+                <!-- 5. Bedridden & Specialized Care -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1516841273335-e39b37888115?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bedridden & Specialized Care" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-red text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+                                05 &bull; Intensive Nursing
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Bedridden & Specialized Care</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Dedicated care for patients with coma, paralysis, dementia, Alzheimer’s, bedsores, and age-related conditions, with 24/7 medical and emergency support.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                        <span>Air & Water Beds</span>
+                        <span class="text-umed-red font-bold">&bull; 24/7 Emergency</span>
+                    </div>
+                </div>
+
+                <!-- 6. Customized Diet & Feeding Support -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Customized Diet & Feeding Support" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+                                06 &bull; Nutrition
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Customized Diet & Feeding Support</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Nutritious, customized diets based on each patient's medical condition, with skilled oral feeding and nasogastric (NG) tube feeding support when required.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                        <span>Diabetic / Renal Diets</span>
+                        <span class="text-umed-green font-bold">&bull; NG Tube Support</span>
+                    </div>
+                </div>
+
+                <!-- 7. Exercise, Back Care & Personal Support (Wide card spanning all 3 columns on large screens, 2 on tablet) -->
+                <div class="bg-white rounded-2xl p-6 md:p-8 medical-card md:col-span-2 lg:col-span-3 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 border-l-4 border-l-umed-green">
+                    <div class="w-full lg:w-1/3 h-52 rounded-xl overflow-hidden shrink-0 bg-slate-100 relative">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Exercise, Back Care & Personal Support" class="w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 bg-umed-green text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
+                            07 &bull; Physical Wellbeing
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/3 space-y-3">
+                        <div class="flex items-center gap-2">
+                            <span class="text-xs font-bold text-umed-green uppercase tracking-wider">Comprehensive Therapy Routine</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-umed-navy">Exercise, Back Care & Personal Support</h3>
+                        <p class="text-slate-600 leading-relaxed text-base">
+                            Daily assisted exercise, back care, repositioning, personal hygiene, and other supportive care essential for patient comfort, joint mobility, and overall wellbeing.
+                        </p>
+                        <div class="pt-2 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
+                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Assisted Mobility Drills</span>
+                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Frequent Repositioning</span>
+                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Skin & Spine Care</span>
+                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Personal Hygiene Support</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Callout linking to the dedicated Specialized Care Page -->
+            <div class="mt-12 bg-white rounded-2xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-umed-red-light text-umed-red flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-umed-navy text-lg">Looking for Condition-Specific Medical Pathways?</h4>
+                        <p class="text-slate-600 text-sm">We provide tailored care protocols for Dementia, Alzheimer’s, Paralysis, Coma, and Pressure Sores.</p>
+                    </div>
+                </div>
+                <a href="specialized-care.html" class="bg-umed-navy hover:bg-slate-800 text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-xs transition-colors shrink-0 flex items-center gap-2">
+                    <span>View Specialized Care Page</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Families Trust Us Section -->
+    <section id="why-trust" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-red bg-umed-red-50 px-3 py-1 rounded-md border border-umed-red/20 mb-3">
+                    Safety, Dignity & Peace of Mind
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-umed-navy">
+                    Why Families Across Pune Choose Umed
+                </h2>
+                <p class="text-slate-600 text-base md:text-lg mt-3">
+                    We treat your family members with the utmost professional responsibility, transparent updates, and genuine human warmth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="w-12 h-12 rounded-xl bg-umed-red text-white flex items-center justify-center font-bold mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-umed-navy mb-3">Emergency Call Bells & CCTV</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Every single room and bed is equipped with instant caregiver call bells and monitored with 24×7 CCTV systems for total safety and rapid medical response.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="w-12 h-12 rounded-xl bg-umed-green text-white flex items-center justify-center font-bold mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-umed-navy mb-3">Consistent Staff Assignment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        We don't rotate unfamiliar strangers daily. Our nurses and attendants are assigned consistently so that meaningful trust and emotional bonding develop.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="w-12 h-12 rounded-xl bg-umed-gold-dark text-white flex items-center justify-center font-bold mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-umed-navy mb-3">Charitable Trust Values</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Operating under OM Prathishthan Charitable Trust, our decisions prioritize patient wellbeing, dignity, and family accessibility over commercial pressure.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Family Banner -->
+    <section class="w-full h-80 md:h-96 relative overflow-hidden bg-umed-navy">
+        <img src="promo-banner-wide.jpg" alt="Umed Care - Because Every Life Matters" class="w-full h-full object-cover object-center opacity-90">
+        <div class="absolute inset-0 bg-gradient-to-r from-umed-navy/90 via-umed-navy/60 to-transparent flex items-center px-6 md:px-16">
+            <div class="max-w-xl text-white">
+                <span class="text-umed-gold font-bold uppercase tracking-wider text-xs block mb-2">Compassion in Every Step</span>
+                <h3 class="text-2xl md:text-4xl font-bold leading-tight mb-3">Because Every Life & Every Stage Matters.</h3>
+                <p class="text-slate-200 text-sm md:text-base mb-6">Our dedicated team is here to support you and your family with patience, dignity, and expert clinical care.</p>
+                <a href="#contact" class="bg-umed-red hover:bg-umed-red-dark text-white font-bold text-sm px-6 py-3 rounded-xl inline-block shadow-md transition-colors">
+                    Talk With Admissions Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Us Section: OM Prathishthan Charitable Trust Mission -->
+    <section id="support" class="py-20 md:py-28 bg-slate-50 border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-green-dark bg-umed-green-light px-3 py-1 rounded-md border border-umed-green/20 mb-3">
+                    Join Our Mission
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-umed-navy">
+                    Ways to Support OM Prathishthan Trust
+                </h2>
+                <p class="text-slate-600 text-base md:text-lg mt-3">
+                    Help us expand our facilities and provide medical care to elderly citizens from all socio-economic backgrounds.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-xs hover:border-slate-300 transition-colors">
+                    <div class="w-12 h-12 bg-umed-red-light text-umed-red rounded-xl flex items-center justify-center font-bold mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-umed-navy mb-2">Building Fund</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Contribute financially toward the trust's vision of an expanded, state-of-the-art elder care campus.</p>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-xs hover:border-slate-300 transition-colors">
+                    <div class="w-12 h-12 bg-umed-green-light text-umed-green-dark rounded-xl flex items-center justify-center font-bold mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-umed-navy mb-2">Occasion Sponsorships</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Celebrate birthdays, weddings, or anniversaries by sponsoring a day's nutritious meals for our residents.</p>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-xs hover:border-slate-300 transition-colors">
+                    <div class="w-12 h-12 bg-umed-gold-light text-umed-gold-dark rounded-xl flex items-center justify-center font-bold mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-umed-navy mb-2">Material Donations</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Donate essential daily supplies like medicines, adult diapers, blankets, bedsheets, grains, and fruits.</p>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-xs hover:border-slate-300 transition-colors">
+                    <div class="w-12 h-12 bg-slate-100 text-umed-navy rounded-xl flex items-center justify-center font-bold mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-umed-navy mb-2">Medical Equipment</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Provide necessary supportive apparatus such as wheelchairs, water beds, oxygen concentrators, and walkers.</p>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-xs hover:border-slate-300 transition-colors">
+                    <div class="w-12 h-12 bg-umed-green-light text-umed-green-dark rounded-xl flex items-center justify-center font-bold mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-umed-navy mb-2">Volunteer Your Time</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">The most priceless contribution. Spend meaningful, heartfelt time reading, chatting, or singing with our seniors.</p>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-xs hover:border-slate-300 transition-colors">
+                    <div class="w-12 h-12 bg-umed-red-light text-umed-red rounded-xl flex items-center justify-center font-bold mb-5">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-umed-navy mb-2">Become a Trust Member</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Join OM Prathishthan as an active advisory member and help shape humanitarian elder-care policies.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left: Contact Details & Instructions -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-red bg-umed-red-50 px-3 py-1 rounded-md border border-umed-red/20">
+                        Get In Touch
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-umed-navy leading-tight">
+                        Schedule a Visit to Umed Care Centre.
+                    </h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Walk through our rooms, patient care units, dining facilities, and peaceful surroundings. Nothing replaces the confidence of seeing our caregivers in action and experiencing the calm, hygienic environment in person.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-umed-red text-white flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-slate-500 font-bold">24/7 Helpline & Admissions</p>
+                                <a href="tel:08080053311" class="text-lg font-bold text-umed-navy hover:text-umed-red transition-colors">080800 53311</a>
+                                <p class="text-xs text-umed-green-dark font-medium mt-0.5">Lines are answered 24 hours daily</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-umed-green text-white flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-slate-500 font-bold">Email Us</p>
+                                <a href="mailto:enquiry@umed.com" class="text-base font-bold text-umed-navy hover:text-umed-green transition-colors">enquiry@umed.com</a>
+                                <p class="text-xs text-slate-500 mt-0.5">Responses within 2 to 4 business hours</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-umed-navy text-white flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-wider text-slate-500 font-bold">Facility Location</p>
+                                <p class="text-sm font-bold text-umed-navy">Umed Care Centre, Pune, Maharashtra</p>
+                                <p class="text-xs text-slate-500 mt-0.5">Visiting Hours: 10:00 AM – 7:00 PM Daily</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Clean Medical Inquiry Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 md:p-10 rounded-3xl border border-slate-200 shadow-xl">
+                        <h3 class="text-2xl font-bold text-umed-navy mb-2">Speak With Our Admissions Coordinator</h3>
+                        <p class="text-slate-600 text-sm mb-6">Tell us about your family member's current condition and care requirements.</p>
+
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Your Full Name *</label>
+                                    <input type="text" id="fullname" placeholder="e.g. Ramesh Kulkarni" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Phone Number *</label>
+                                    <input type="tel" id="phone" placeholder="e.g. 080800 53311" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Primary Care Requirement</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all">
+                                    <option value="long-term">Long-Term Elder Care</option>
+                                    <option value="bedridden">Bedridden & Dependent Care</option>
+                                    <option value="paralysis">Paralysis Care</option>
+                                    <option value="dementia">Dementia & Alzheimer's Care</option>
+                                    <option value="coma">Coma & Intensive Support</option>
+                                    <option value="bedsore">Bedsore & Wound Care</option>
+                                    <option value="post-surgery">Post-Hospitalization Recovery</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Describe The Resident's Condition (Optional)</label>
+                                <textarea id="message" rows="4" placeholder="Mention age, mobility level, tube feeding needs, or any specific medical instructions..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-umed-red hover:bg-umed-red-dark text-white font-bold py-4 px-6 rounded-xl transition duration-200 shadow-md hover:shadow-lg text-base flex items-center justify-center gap-2">
+                                <span>Submit Care Inquiry</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </button>
+
+                            <div id="form-feedback" class="hidden text-center text-sm font-semibold text-umed-green-dark bg-umed-green-light p-3.5 rounded-xl border border-umed-green/30">
+                                Thank you! Your inquiry has been received. Our clinical admissions team will contact you promptly at the provided number.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="bg-umed-navy text-slate-400 pt-16 pb-24 lg:pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand & Trust Details -->
+                <div class="lg:col-span-5 space-y-4">
+                    <img src="umed-logo-white.png?v=4" alt="Umed Care Centre - A Project of OM Prathishthan Charitable Trust" class="h-14 md:h-16 w-auto object-contain">
+                    <p class="text-sm text-slate-300 leading-relaxed max-w-sm">
+                        Umed Care Centre is a humanitarian elder and bedridden healthcare initiative governed by <strong class="text-white">OM Prathishthan Charitable Trust</strong>. Dedicated to compassionate care, medical dignity, and professional patient attention in Pune since 2000.
+                    </p>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <p>&bull; Non-Profit Trust Initiative</p>
+                        <p>&bull; 24-Hour Medical Helpline: <span class="text-white font-bold">080800 53311</span></p>
+                    </div>
+                </div>
+
+                <!-- Col 2: Healthcare Services -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Healthcare Services</h4>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li><a href="#services" class="hover:text-white transition-colors">Long-Term Elder Care</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Qualified 24/7 Nurses</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Doctor Check-up & Vitals</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Specialist Consultations</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Bedridden & Paralysis Support</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Customized & NG Feeding Diet</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Exercise & Back Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Specialized Care Conditions -->
+                <div class="lg:col-span-4 space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Specialized Care Programs</h4>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">01 — Old Age & Assisted Elder Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">02 — Bedridden & Dependent Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">03 — Paralysis Mobility Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">04 — Dementia Memory Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">05 — Alzheimer’s Compassionate Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">06 — Coma & Highly Dependent Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">07 — Bedsore & Wound Management</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright & Trust Registration Strip -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 Umed Care Centre. A Project of OM Prathishthan Charitable Trust. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="hover:text-slate-300">English</a>
+                    <span>&bull;</span>
+                    <a href="index-mr.html" class="hover:text-slate-300">मराठी</a>
+                    <span>&bull;</span>
+                    <a href="#contact" class="hover:text-slate-300">Pune Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile Sticky Helpline / Action Bar -->
+    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 px-4 py-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between gap-3">
+        <a href="tel:08080053311" class="flex-1 bg-umed-red hover:bg-umed-red-dark text-white font-bold text-xs sm:text-sm py-3 px-3 rounded-xl flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]">
+            <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span>Call 080800 53311</span>
+        </a>
+        <a href="#contact" class="flex-1 bg-umed-navy hover:bg-slate-800 text-white font-bold text-xs sm:text-sm py-3 px-3 rounded-xl flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]">
+            <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            <span>Schedule Visit</span>
+        </a>
+    </div>
+
+    <!-- Interactive Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile menu toggle with icon transition
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isOpened = !mobileMenu.classList.toggle('hidden');
+                    if (menuIcon) {
+                        if (isOpened) {
+                            menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        } else {
+                            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        }
+                    }
+                });
+
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        if (menuIcon) {
+                            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        }
+                    });
+                });
+            }
+
+            // Contact Form Feedback
+            const contactForm = document.getElementById('contact-form');
+            const formFeedback = document.getElementById('form-feedback');
+            if (contactForm && formFeedback) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    formFeedback.classList.remove('hidden');
+                    contactForm.reset();
+                    setTimeout(() => {
+                        formFeedback.classList.add('hidden');
+                    }, 6000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

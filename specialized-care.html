@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Care Programs | Umed Care Centre Pune</title>
+    <meta name="description" content="Condition-specific elder care programs: Old Age Assistance, Bedridden Care, Paralysis, Dementia, Alzheimer's, Coma, and Bedsore Management at Umed Care Centre Pune.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        umed: {
+                            red: '#D82E2B',
+                            'red-dark': '#B91C1C',
+                            'red-light': '#FEE2E2',
+                            'red-50': '#FEF2F2',
+                            green: '#6EA323',
+                            'green-dark': '#558217',
+                            'green-light': '#ECF5DE',
+                            'green-50': '#F4F9EB',
+                            gold: '#F59E0B',
+                            'gold-dark': '#D97706',
+                            'gold-light': '#FEF3C7',
+                            navy: '#0F172A',
+                            slate: '#1E293B',
+                            muted: '#64748B',
+                            border: '#E2E8F0',
+                            surface: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            color: #1E293B;
+            background-color: #FFFFFF;
+        }
+
+        .medical-card {
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s ease;
+        }
+        .medical-card:hover {
+            border-color: #CBD5E1;
+            box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08);
+            transform: translateY(-4px);
+        }
+        .nav-item {
+            position: relative;
+            padding: 0.5rem 0;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: #334155;
+            white-space: nowrap;
+            transition: color 0.2s ease;
+        }
+        .nav-item:hover {
+            color: #D82E2B;
+        }
+        .nav-item.active {
+            color: #D82E2B;
+            font-weight: 700;
+        }
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2.5px;
+            background-color: #D82E2B;
+            border-radius: 9999px;
+            transition: width 0.25s ease;
+        }
+        .nav-item:hover::after,
+        .nav-item.active::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-umed-red selection:text-white">
+
+    <!-- Top Utility & Trust Bar -->
+    <div class="bg-[#0B132B] text-slate-300 text-xs py-2 px-4 md:px-8 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
+            <!-- Left Trust Mission -->
+            <div class="flex items-center gap-2 truncate">
+                <span class="inline-block w-2 h-2 rounded-full bg-umed-green animate-pulse shrink-0"></span>
+                <span class="font-semibold text-white tracking-wide truncate">OM Prathishthan Charitable Trust</span>
+                <span class="hidden sm:inline text-slate-500">•</span>
+                <span class="hidden sm:inline text-slate-400">Dedicated Elder & Bedridden Care in Pune (Since 2000)</span>
+            </div>
+            
+            <!-- Right Actions: Admissions, Helpline & Language -->
+            <div class="flex items-center gap-3 sm:gap-4 text-slate-300 text-xs shrink-0">
+                <div class="hidden md:flex items-center gap-1.5 text-slate-400">
+                    <svg class="w-3.5 h-3.5 text-umed-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span>Visiting: 10 AM – 7 PM</span>
+                </div>
+                
+                <span class="hidden md:inline text-slate-700">|</span>
+
+                <a href="tel:08080053311" class="hidden sm:flex font-bold text-white hover:text-umed-gold transition-colors items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-umed-red animate-ping"></span>
+                    <span>24/7 Helpline: <span class="text-umed-gold font-extrabold tracking-wide">080800 53311</span></span>
+                </a>
+
+                <span class="hidden sm:inline text-slate-700">|</span>
+
+                <!-- Language Switcher in Top Bar -->
+                <div class="inline-flex items-center bg-slate-800/90 rounded-md p-0.5 border border-slate-700 text-[11px] font-bold">
+                    <span class="bg-umed-red text-white px-2 py-0.5 rounded shadow-xs">EN</span>
+                    <a href="index-mr.html" class="text-slate-300 hover:text-white px-2 py-0.5 transition-colors">मराठी</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white border-b border-slate-200/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)]">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 h-20 md:h-22 flex items-center justify-between gap-6">
+            
+            <!-- Left: Logo with Dedicated Breathing Room -->
+            <a href="index.html" class="flex items-center shrink-0 pr-2 transition-transform duration-200 hover:scale-[1.02]" aria-label="Umed Care Centre Home">
+                <img src="umed-logo.png?v=4" alt="Umed Care Centre - A Ray of Hope" class="h-14 md:h-16 w-auto object-contain">
+            </a>
+
+            <!-- Center: Clean, Single-Line, Uncluttered Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px]">
+                <a href="index.html#hero" class="nav-item">Home</a>
+                <a href="index.html#about" class="nav-item">About Us</a>
+                <a href="index.html#services" class="nav-item">Services</a>
+                <a href="specialized-care.html" class="nav-item active flex items-center gap-1.5">
+                    <span>Specialized Care</span>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wide bg-umed-red-light text-umed-red px-1.5 py-0.5 rounded-full border border-umed-red/20">7 Conditions</span>
+                </a>
+                <a href="index.html#why-trust" class="nav-item">Why Choose Us</a>
+                <a href="index.html#support" class="nav-item">Support Us</a>
+                <a href="index.html#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <!-- Right: Quick Phone Dial + Primary Book Visit Button -->
+            <div class="hidden sm:flex items-center gap-3.5 shrink-0">
+                <a href="tel:08080053311" class="hidden xl:inline-flex items-center gap-2 text-sm font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 border border-slate-200/90 px-4 py-2.5 rounded-full transition-all duration-200 shadow-2xs whitespace-nowrap">
+                    <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>080800 53311</span>
+                </a>
+
+                <a href="index.html#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-umed-red to-umed-red-dark hover:from-umed-red-dark hover:to-red-800 text-white font-bold text-sm px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 whitespace-nowrap">
+                    <span>Book a Visit</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="flex lg:hidden items-center gap-3">
+                <a href="tel:08080053311" class="p-2 text-umed-red bg-umed-red-50 rounded-full" aria-label="Call Helpline">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </a>
+                <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation Menu" class="p-2 text-slate-800 hover:text-umed-red focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-5 space-y-3.5 shadow-lg">
+            <a href="index.html#hero" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Home</a>
+            <a href="index.html#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">About Us</a>
+            <a href="index.html#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Services</a>
+            <a href="specialized-care.html" class="mobile-nav-link font-bold text-umed-red flex items-center justify-between py-1">
+                <span>Specialized Care</span>
+                <span class="text-xs bg-umed-red-light text-umed-red px-2 py-0.5 rounded-full font-bold">Active</span>
+            </a>
+            <a href="index.html#why-trust" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Why Choose Us</a>
+            <a href="index.html#support" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Support Us</a>
+            <a href="index.html#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Contact</a>
+            
+            <div class="pt-4 border-t border-slate-100 flex flex-col gap-2.5">
+                <a href="tel:08080053311" class="text-center font-bold text-white bg-umed-red py-3 rounded-xl shadow-md flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>Call Helpline: 080800 53311</span>
+                </a>
+                <a href="index.html#contact" class="mobile-nav-link text-center font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 py-3 rounded-xl flex items-center justify-center gap-2">
+                    <span>Schedule a Facility Tour</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header / Hero -->
+    <section class="bg-gradient-to-b from-slate-50 to-white pt-14 pb-20 md:pt-20 md:pb-28 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 md:px-8 text-center">
+            
+            <div class="inline-flex items-center gap-2 bg-umed-red-50 border border-umed-red/20 px-3.5 py-1.5 rounded-full text-xs font-bold text-umed-red uppercase tracking-wider mb-5">
+                <span>Specialized Clinical Programs</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-umed-navy leading-[1.18] tracking-tight mb-6">
+                Care Designed Around Individual Needs
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-700 leading-relaxed font-normal max-w-3xl mx-auto mb-6">
+                At <strong class="text-slate-900 font-semibold">Umed Care Centre</strong>, we provide assisted and long-term care for individuals who require continuous support because of age, reduced mobility, neurological conditions, prolonged illness, or dependence on others for everyday activities.
+            </p>
+
+            <p class="text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8">
+                Our focus goes beyond accommodation. We aim to provide a safe, supportive, and dignified environment where each resident’s day-to-day needs can be managed with personal attention, expert clinical oversight, and sincere compassion.
+            </p>
+
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="#care-categories" class="bg-umed-red hover:bg-umed-red-dark text-white font-bold py-3.5 px-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-sm md:text-base flex items-center gap-2">
+                    <span>Explore 7 Care Categories</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                
+                <a href="tel:08080053311" class="bg-white hover:bg-slate-50 text-umed-navy border border-slate-300 font-bold py-3.5 px-7 rounded-xl shadow-xs transition-all duration-200 text-sm md:text-base flex items-center gap-2">
+                    <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>080800 53311 &bull; 24 Hours</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Care Categories Section -->
+    <section id="care-categories" class="py-20 md:py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-green-dark bg-umed-green-light px-3 py-1 rounded-md border border-umed-green/20 mb-3">
+                    Conditions We Support
+                </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-umed-navy tracking-tight">
+                    Dedicated Pathways for Every Dependency Level
+                </h2>
+                <p class="text-slate-600 text-base md:text-lg mt-3">
+                    Every resident receives personalized assistance and structured monitoring aligned with their unique condition and medical diagnosis.
+                </p>
+            </div>
+
+            <!-- Grid of 7 Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 01 — Old Age & Assisted Elder Care -->
+                <div class="bg-white rounded-2xl p-8 medical-card flex flex-col justify-between border-t-4 border-t-umed-red">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold uppercase tracking-wider text-umed-red bg-umed-red-50 px-2.5 py-1 rounded-md border border-umed-red/20">Category 01</span>
+                            <span class="text-3xl font-extrabold text-slate-200">01</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-umed-navy mb-2">Old Age & Assisted Elder Care</h3>
+                        <p class="text-slate-900 font-semibold text-sm mb-3">Support for seniors who need assistance with everyday living.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                            As people grow older, activities such as walking, bathing, dressing, eating, maintaining personal hygiene, or managing a daily routine may become difficult.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            At Umed, support includes assistance with daily activities, meals, mobility, personal hygiene, comfort, companionship, and routine care based on the individual’s needs.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                        <span>Personal Attention</span>
+                        <span class="text-umed-green font-bold">&bull; Loving Companionship</span>
+                    </div>
+                </div>
+
+                <!-- 02 — Bedridden & Dependent Care -->
+                <div class="bg-white rounded-2xl p-8 medical-card flex flex-col justify-between border-t-4 border-t-umed-green">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold uppercase tracking-wider text-umed-green-dark bg-umed-green-50 px-2.5 py-1 rounded-md border border-umed-green/20">Category 02</span>
+                            <span class="text-3xl font-extrabold text-slate-200">02</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-umed-navy mb-2">Bedridden & Dependent Care</h3>
+                        <p class="text-slate-900 font-semibold text-sm mb-3">Dedicated support for individuals who cannot manage daily activities independently.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                            Bedridden individuals may require frequent assistance with positioning, hygiene, meals, comfort, and other everyday needs.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Our care approach focuses on maintaining comfort, cleanliness, dignity, and attentive day-to-day support while reducing complications associated with prolonged immobility where possible.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                        <span>Repositioning Care</span>
+                        <span class="text-umed-green font-bold">&bull; Hygiene Details</span>
+                    </div>
+                </div>
+
+                <!-- 03 — Paralysis Care -->
+                <div class="bg-white rounded-2xl p-8 medical-card flex flex-col justify-between border-t-4 border-t-umed-gold-dark">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold uppercase tracking-wider text-umed-gold-dark bg-umed-gold-light px-2.5 py-1 rounded-md border border-umed-gold/20">Category 03</span>
+                            <span class="text-3xl font-extrabold text-slate-200">03</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-umed-navy mb-2">Paralysis Care</h3>
+                        <p class="text-slate-900 font-semibold text-sm mb-3">Assistance for individuals living with partial or significant loss of mobility.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                            People affected by paralysis may require help with movement, transfers, and everyday personal activities.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Umed provides supportive assistance according to the resident’s level of dependency, with an emphasis on safe mobility, daily routines, personal care, comfort, and dignity.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                        <span>Safe Transfers</span>
+                        <span class="text-umed-green font-bold">&bull; Dignified Routines</span>
+                    </div>
+                </div>
+
+                <!-- 04 — Dementia Care -->
+                <div class="bg-white rounded-2xl p-8 medical-card flex flex-col justify-between border-t-4 border-t-umed-navy">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold uppercase tracking-wider text-umed-navy bg-slate-100 px-2.5 py-1 rounded-md border border-slate-300">Category 04</span>
+                            <span class="text-3xl font-extrabold text-slate-200">04</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-umed-navy mb-2">Dementia Care</h3>
+                        <p class="text-slate-900 font-semibold text-sm mb-3">A supportive environment for individuals experiencing memory and cognitive difficulties.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                            Dementia can affect memory, communication, orientation, and the ability to perform everyday activities.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Our approach emphasizes familiar routines, patient communication, supervision, assistance with daily activities, and a calm, respectful environment tailored to the person’s needs.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                        <span>Cognitive Calm</span>
+                        <span class="text-umed-green font-bold">&bull; 24/7 Supervision</span>
+                    </div>
+                </div>
+
+                <!-- 05 — Alzheimer’s Care -->
+                <div class="bg-white rounded-2xl p-8 medical-card flex flex-col justify-between border-t-4 border-t-umed-red">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold uppercase tracking-wider text-umed-red bg-umed-red-50 px-2.5 py-1 rounded-md border border-umed-red/20">Category 05</span>
+                            <span class="text-3xl font-extrabold text-slate-200">05</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-umed-navy mb-2">Alzheimer’s Care</h3>
+                        <p class="text-slate-900 font-semibold text-sm mb-3">Compassionate assistance for individuals living with Alzheimer’s disease.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                            As Alzheimer’s progresses, a person may increasingly need support with communication, eating, hygiene, mobility, and other daily activities.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Umed focuses on providing consistent routines, supervision, companionship, and personal assistance while treating every individual with patience and respect.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                        <span>Consistent Routines</span>
+                        <span class="text-umed-green font-bold">&bull; Constant Companion</span>
+                    </div>
+                </div>
+
+                <!-- 06 — Coma & Highly Dependent Care -->
+                <div class="bg-white rounded-2xl p-8 medical-card flex flex-col justify-between border-t-4 border-t-umed-green">
+                    <div>
+                        <div class="flex items-center justify-between mb-5">
+                            <span class="text-xs font-bold uppercase tracking-wider text-umed-green-dark bg-umed-green-50 px-2.5 py-1 rounded-md border border-umed-green/20">Category 06</span>
+                            <span class="text-3xl font-extrabold text-slate-200">06</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-umed-navy mb-2">Coma & Highly Dependent Care</h3>
+                        <p class="text-slate-900 font-semibold text-sm mb-3">Continuous supportive care for individuals with a high level of dependency.</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                            Individuals in a coma or with severe dependency may require extensive day-to-day assistance and close coordination with their treating medical professionals.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Umed provides supportive care according to the individual’s requirements and our available capabilities, with attention to hygiene, positioning, nutrition support, comfort, and general care routines.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                        <span>Medical Oversight</span>
+                        <span class="text-umed-green font-bold">&bull; Tube Feed Care</span>
+                    </div>
+                </div>
+
+                <!-- 07 — Bedsore / Pressure Sore Care (Full width card on desktop, 2-col on tablet) -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 md:p-10 medical-card md:col-span-2 lg:col-span-3 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 border-l-4 border-l-umed-red">
+                    <div class="w-full lg:w-1/3">
+                        <span class="text-xs font-bold uppercase tracking-wider text-umed-red bg-umed-red-50 px-2.5 py-1 rounded-md border border-umed-red/20 inline-block mb-3">Category 07</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-umed-navy mb-2">Bedsore / Pressure Sore Care</h3>
+                        <p class="text-slate-900 font-semibold text-sm">Focused care for individuals at risk of or living with pressure sores.</p>
+                    </div>
+                    <div class="w-full lg:w-2/3 border-t lg:border-t-0 lg:border-l border-slate-200 pt-6 lg:pt-0 lg:pl-10 space-y-3">
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                            People who remain in one position for extended periods can be at risk of developing pressure injuries.
+                        </p>
+                        <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                            Care includes regular repositioning every 2 hours, hygiene and skin care, wound-care support as clinically appropriate, nutrition attention, air/water bed usage, and coordination with medical professionals when required.
+                        </p>
+                        <div class="pt-2 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
+                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">2-Hour Repositioning</span>
+                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Air & Water Mattresses</span>
+                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Daily Antiseptic Dressing</span>
+                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Specialized Skin Hygiene</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- A Care Plan Built Around the Person Section -->
+    <section class="py-20 md:py-28 bg-white border-t border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 md:px-8 text-center">
+            
+            <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-navy bg-slate-100 px-3 py-1 rounded-md border border-slate-200 mb-3">
+                Pre-Admission Assessment
+            </span>
+            
+            <h2 class="text-3xl md:text-4xl font-bold text-umed-navy mb-5">
+                A Care Plan Built Around the Person
+            </h2>
+            
+            <p class="text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto mb-12">
+                Every resident comes to Umed with a different history, condition, and level of dependency. Before admission, the person’s care requirements and Umed’s ability to safely support those requirements are thoroughly assessed.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="w-8 h-8 rounded-lg bg-umed-red text-white flex items-center justify-center font-bold text-sm mb-4">1</div>
+                    <h4 class="font-bold text-umed-navy text-base mb-1">Clinical Assessment</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Detailed evaluation of resident’s medical history, current prescriptions, mobility level, and mental orientation.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="w-8 h-8 rounded-lg bg-umed-green text-white flex items-center justify-center font-bold text-sm mb-4">2</div>
+                    <h4 class="font-bold text-umed-navy text-base mb-1">Custom Protocol Creation</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Setting up specific dietary instructions, repositioning schedules, doctor visit intervals, and vitals check frequency.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="w-8 h-8 rounded-lg bg-umed-navy text-white flex items-center justify-center font-bold text-sm mb-4">3</div>
+                    <h4 class="font-bold text-umed-navy text-base mb-1">Attentive Daily Care</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Assignment of dedicated, consistent nurses and attendants with transparent weekly progress updates to the family.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Strong Closing CTA Section -->
+    <section class="py-20 md:py-28 bg-umed-navy text-white text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 md:px-8 relative z-10 space-y-6">
+            
+            <div class="inline-flex items-center gap-2 bg-slate-800 text-slate-300 text-xs font-semibold px-4 py-1.5 rounded-full border border-slate-700">
+                <span class="w-2 h-2 rounded-full bg-umed-green animate-pulse"></span>
+                <span>Admissions & Counseling Available 24×7</span>
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-bold leading-tight tracking-tight">
+                Not sure whether Umed is suitable for your loved one?
+            </h2>
+
+            <p class="text-slate-300 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                Speak with our team to discuss their current care requirements. We are here to guide you with clinical clarity, honesty, and empathy.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="tel:08080053311" class="w-full sm:w-auto bg-umed-red hover:bg-umed-red-dark text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-colors text-lg flex items-center justify-center gap-3">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg>
+                    <span>080800 53311 | Open 24 Hours</span>
+                </a>
+                
+                <a href="index.html#contact" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white font-semibold py-4 px-8 rounded-xl border border-slate-700 transition-colors text-base">
+                    Book an On-Site Center Tour
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="bg-umed-navy text-slate-400 pt-16 pb-24 lg:pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand & Trust Details -->
+                <div class="lg:col-span-5 space-y-4">
+                    <img src="umed-logo-white.png?v=4" alt="Umed Care Centre" class="h-14 md:h-16 w-auto object-contain">
+                    <p class="text-sm text-slate-300 leading-relaxed max-w-sm">
+                        Umed Care Centre is a humanitarian elder and bedridden healthcare initiative governed by <strong class="text-white">OM Prathishthan Charitable Trust</strong>. Dedicated to compassionate care, medical dignity, and professional patient attention in Pune since 2000.
+                    </p>
+                    <div class="text-xs text-slate-400 space-y-1">
+                        <p>&bull; Non-Profit Trust Initiative</p>
+                        <p>&bull; 24-Hour Medical Helpline: <span class="text-white font-bold">080800 53311</span></p>
+                    </div>
+                </div>
+
+                <!-- Col 2: Healthcare Services -->
+                <div class="lg:col-span-3 space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Healthcare Services</h4>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Long-Term Elder Care</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Qualified 24/7 Nurses</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Doctor Check-up & Vitals</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Specialist Consultations</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Bedridden & Paralysis Support</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Customized & NG Feeding Diet</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition-colors">Exercise & Back Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Specialized Care Conditions -->
+                <div class="lg:col-span-4 space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider">Specialized Care Programs</h4>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">01 — Old Age & Assisted Elder Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">02 — Bedridden & Dependent Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">03 — Paralysis Mobility Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">04 — Dementia Memory Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">05 — Alzheimer’s Compassionate Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">06 — Coma & Highly Dependent Care</a></li>
+                        <li><a href="specialized-care.html" class="hover:text-white transition-colors">07 — Bedsore & Wound Management</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 Umed Care Centre. A Project of OM Prathishthan Charitable Trust. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="hover:text-slate-300">English</a>
+                    <span>&bull;</span>
+                    <a href="index-mr.html" class="hover:text-slate-300">मराठी</a>
+                    <span>&bull;</span>
+                    <a href="index.html#contact" class="hover:text-slate-300">Pune Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Mobile Sticky Helpline / Action Bar -->
+    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 px-4 py-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between gap-3">
+        <a href="tel:08080053311" class="flex-1 bg-umed-red hover:bg-umed-red-dark text-white font-bold text-xs sm:text-sm py-3 px-3 rounded-xl flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]">
+            <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <span>Call 080800 53311</span>
+        </a>
+        <a href="index.html#contact" class="flex-1 bg-umed-navy hover:bg-slate-800 text-white font-bold text-xs sm:text-sm py-3 px-3 rounded-xl flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]">
+            <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            <span>Book Visit</span>
+        </a>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isOpened = !mobileMenu.classList.toggle('hidden');
+                    if (menuIcon) {
+                        if (isOpened) {
+                            menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                        } else {
+                            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        }
+                    }
+                });
+
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        if (menuIcon) {
+                            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
