@@ -156,27 +156,30 @@
             </a>
 
             <!-- Center: Clean, Single-Line, Uncluttered Navigation Links -->
-            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px]">
+            <nav class="hidden lg:flex items-center gap-2 xl:gap-3.5 2xl:gap-5 text-[13px] xl:text-[13.5px] 2xl:text-[14.5px] whitespace-nowrap">
                 <a href="#hero" class="nav-item active">Home</a>
                 <a href="#about" class="nav-item">About Us</a>
+                <a href="#founder" class="nav-item hidden xl:inline-block">Our Founder</a>
                 <a href="#services" class="nav-item">Services</a>
-                <a href="specialized-care.html" class="nav-item flex items-center gap-1.5">
+                <a href="specialized-care.html" class="nav-item flex items-center gap-1">
                     <span>Specialized Care</span>
-                    <span class="text-[10px] font-extrabold uppercase tracking-wide bg-umed-green-light text-umed-green-dark px-1.5 py-0.5 rounded-full border border-umed-green/20">7 Conditions</span>
+                    <span class="hidden 2xl:inline-block text-[10px] font-extrabold uppercase tracking-wide bg-umed-green-light text-umed-green-dark px-1.5 py-0.5 rounded-full border border-umed-green/20">7 Conditions</span>
                 </a>
-                <a href="#why-trust" class="nav-item">Why Choose Us</a>
-                <a href="#support" class="nav-item">Support Us</a>
+                <a href="#gallery" class="nav-item">Gallery</a>
+                <a href="#testimonials" class="nav-item">Testimonials</a>
+                <a href="#why-trust" class="nav-item hidden xl:inline-block">Why Choose Us</a>
+                <a href="#support" class="nav-item hidden 2xl:inline-block">Support Us</a>
                 <a href="#contact" class="nav-item">Contact</a>
             </nav>
 
             <!-- Right: Quick Phone Dial + Primary Book Visit Button -->
-            <div class="hidden sm:flex items-center gap-3.5 shrink-0">
-                <a href="tel:08080053311" class="hidden xl:inline-flex items-center gap-2 text-sm font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 border border-slate-200/90 px-4 py-2.5 rounded-full transition-all duration-200 shadow-2xs whitespace-nowrap">
+            <div class="hidden sm:flex items-center gap-3 shrink-0">
+                <a href="tel:08080053311" class="hidden 2xl:inline-flex items-center gap-2 text-sm font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 border border-slate-200/90 px-4 py-2.5 rounded-full transition-all duration-200 shadow-2xs whitespace-nowrap">
                     <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                     <span>080800 53311</span>
                 </a>
 
-                <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-umed-red to-umed-red-dark hover:from-umed-red-dark hover:to-red-800 text-white font-bold text-sm px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 whitespace-nowrap">
+                <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-umed-red to-umed-red-dark hover:from-umed-red-dark hover:to-red-800 text-white font-bold text-xs sm:text-sm px-5 sm:px-6 py-2.5 sm:py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 whitespace-nowrap">
                     <span>Book a Visit</span>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
                 </a>
@@ -199,11 +202,14 @@
         <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-5 space-y-3.5 shadow-lg">
             <a href="#hero" class="mobile-nav-link block font-bold text-umed-red text-base py-1">Home</a>
             <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">About Us</a>
+            <a href="#founder" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Our Founder</a>
             <a href="#services" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Services</a>
             <a href="specialized-care.html" class="mobile-nav-link font-semibold text-umed-navy flex items-center justify-between py-1">
                 <span>Specialized Care</span>
                 <span class="text-xs bg-umed-green-light text-umed-green-dark px-2 py-0.5 rounded-full font-bold">7 Conditions</span>
             </a>
+            <a href="#gallery" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Gallery</a>
+            <a href="#testimonials" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Testimonials</a>
             <a href="#why-trust" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Why Choose Us</a>
             <a href="#support" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Support Us</a>
             <a href="#contact" class="mobile-nav-link block font-semibold text-slate-700 hover:text-umed-red text-base py-1">Contact</a>
@@ -228,17 +234,17 @@
                 <!-- Left Column: Clear, Professional Healthcare Value Proposition -->
                 <div class="lg:col-span-7 space-y-6">
                     
-                    <div class="inline-flex items-center gap-2.5 bg-umed-green-50 border border-umed-green/20 px-3.5 py-1.5 rounded-full text-xs md:text-sm font-semibold text-umed-green-dark">
-                        <span class="w-2 h-2 rounded-full bg-umed-green"></span>
-                        <span>A Ray of Hope for Elderly & Bedridden Loved Ones</span>
+                    <div class="inline-flex items-center gap-2.5 bg-umed-red-50 border border-umed-red/30 px-4 py-1.5 rounded-full text-xs md:text-sm font-extrabold text-umed-red">
+                        <span class="w-2.5 h-2.5 rounded-full bg-umed-red animate-pulse"></span>
+                        <span class="tracking-wider uppercase">Umeed Care Center Pune</span>
                     </div>
 
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-bold text-umed-navy leading-[1.18] tracking-tight">
-                        Thoughtfully Designed Elder & Bedridden Care in Pune.
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-umed-navy leading-[1.18] tracking-tight">
+                        Thoughtfully designed elder and bedridden care in Pune
                     </h1>
 
-                    <p class="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl font-normal">
-                        Providing a secure, homely, and medically equipped sanctuary for elderly residents who deserve continuous compassion, dignity, and professional clinical care. Backed by <strong class="text-slate-900 font-semibold">OM Prathishthan Charitable Trust</strong> since 2000.
+                    <p class="text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed max-w-2xl font-normal">
+                        At <strong class="text-umed-navy font-bold bg-amber-50 px-2 py-0.5 rounded border border-amber-200/60">Umeed Care Center Pune</strong>, we provide specialized medical care, 24/7 nursing supervision, and professional clinical care tailored specifically for bedridden, paralyzed, and disabled individuals. We have been serving in this field since September 2000, bringing over 26 years of dedicated healthcare experience. This is a project of OM Prathishthan Charitable Trust.
                     </p>
 
                     <!-- Key Clinical Trust Bullets -->
@@ -247,25 +253,37 @@
                             <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <span>Qualified 24/7 Nurses & Ward Boys</span>
+                            <span class="font-semibold text-slate-900">Daily doctor's visit</span>
                         </div>
                         <div class="flex items-center gap-2.5">
                             <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <span>Daily Doctor Visits & Vitals 3× a Day</span>
+                            <span>Qualified 24/7 Nurses &amp; Ward Boys</span>
                         </div>
                         <div class="flex items-center gap-2.5">
                             <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <span>Paralysis, Dementia & Bedsore Protocols</span>
+                            <span>Protocols for Paralyzed, Dementia &amp; Bedsores</span>
                         </div>
                         <div class="flex items-center gap-2.5">
                             <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <span>Nutritious & NG Tube Feeding Support</span>
+                            <span>Nutritious Care &amp; Nasal Feeding Tube Support</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>24/7 Dedicated Oxygen Backup On-Site</span>
+                        </div>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-5 h-5 rounded-full bg-umed-green-light text-umed-green-dark flex items-center justify-center shrink-0">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <span>Handling Emergency Cases &amp; Hospital Tie-Ups</span>
                         </div>
                     </div>
 
@@ -283,9 +301,16 @@
                     </div>
 
                     <!-- Live Helpline Note -->
-                    <p class="text-xs text-slate-500 font-medium pt-1">
-                        Emergency admission line active 24 Hours: <strong class="text-umed-navy">080800 53311</strong> &bull; Walk-ins welcome for family tours.
-                    </p>
+                    <div class="p-3.5 bg-red-50/90 rounded-xl border border-red-200/80 text-xs text-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-umed-red animate-ping shrink-0"></span>
+                            <span><strong>Emergency Cases Accepted 24/7:</strong> Immediate bed admission, on-site oxygen backup &amp; priority clinical stabilization.</span>
+                        </div>
+                        <a href="tel:08080053311" class="text-umed-red font-bold hover:underline whitespace-nowrap flex items-center gap-1">
+                            <span>080800 53311</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -309,7 +334,7 @@
                         <!-- Floating Stat Card 1: Years of Service -->
                         <div class="absolute top-3 left-3 sm:-top-4 sm:-left-6 bg-white/95 backdrop-blur-xs p-3 sm:p-4 rounded-xl sm:rounded-2xl shadow-xl border border-slate-100 flex items-center gap-2.5 sm:gap-3.5 max-w-[210px] sm:max-w-none">
                             <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-umed-gold-light text-umed-gold-dark flex items-center justify-center font-extrabold text-lg sm:text-xl shrink-0">
-                                24+
+                                26+
                             </div>
                             <div>
                                 <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Established Record</p>
@@ -323,8 +348,8 @@
                                 <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                             </div>
                             <div>
-                                <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Daily Clinical Rounds</p>
-                                <p class="text-xs sm:text-sm font-bold text-umed-navy leading-tight">Doctor & Vitals Check</p>
+                                <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Clinical Oversight</p>
+                                <p class="text-xs sm:text-sm font-bold text-umed-navy leading-tight">Doctor's Visit &amp; Care</p>
                             </div>
                         </div>
 
@@ -341,27 +366,27 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 text-center">
                 
                 <div class="p-3 sm:p-4 bg-white md:bg-transparent rounded-xl md:rounded-none border md:border-0 border-slate-200/80 shadow-2xs md:shadow-none">
-                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-red">2000</p>
-                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Foundation Year</p>
-                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">24+ Years Non-Profit Care</p>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-red">Sept 2000</p>
+                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Established</p>
+                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">26 Years Experience</p>
                 </div>
 
                 <div class="p-3 sm:p-4 bg-white md:bg-transparent rounded-xl md:rounded-none border md:border-0 md:border-l border-slate-200/80 shadow-2xs md:shadow-none">
                     <p class="text-2xl sm:text-3xl font-extrabold text-umed-green">24×7</p>
-                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Nurses & Attendants</p>
-                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Continuous On-Bed Care</p>
+                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Nurses &amp; Ward Boys</p>
+                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Qualified Round-the-Clock Care</p>
                 </div>
 
                 <div class="p-3 sm:p-4 bg-white md:bg-transparent rounded-xl md:rounded-none border md:border-0 md:border-l border-slate-200/80 shadow-2xs md:shadow-none">
-                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-gold-dark">3× Daily</p>
-                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Vitals Evaluation</p>
-                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">BP, Oxygen & Temp Tracking</p>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-gold-dark">Daily</p>
+                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Doctor's Visit</p>
+                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Clinical Rounds &amp; Oversight</p>
                 </div>
 
                 <div class="p-3 sm:p-4 bg-white md:bg-transparent rounded-xl md:rounded-none border md:border-0 md:border-l border-slate-200/80 shadow-2xs md:shadow-none">
-                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-navy">100%</p>
-                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Verified Personnel</p>
-                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">Background-Checked Staff</p>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-umed-navy">24/7</p>
+                    <p class="text-xs font-semibold text-slate-600 uppercase tracking-wider mt-1">Oxygen &amp; Emergency</p>
+                    <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5">On-Site Backup &amp; Hospital Tie-Up</p>
                 </div>
 
             </div>
@@ -377,7 +402,7 @@
                 <div class="lg:col-span-5">
                     <div class="relative">
                         <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-                            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Attentive nurse providing care at Umed" class="w-full h-full object-cover">
+                            <img src="about-care-nurse.jpg" alt="Attentive nurse providing care at Umed" class="w-full h-full object-cover">
                         </div>
                         <div class="mt-4 p-5 bg-umed-green-50 rounded-2xl border border-umed-green/20">
                             <div class="flex items-center gap-3">
@@ -408,26 +433,180 @@
                     </p>
 
                     <p class="text-slate-600 leading-relaxed text-base">
-                        Our nurses and attendants are professionally trained, background-verified, and assigned with consistency — so our residents never feel like they are in an impersonal clinic or being attended to by strangers.
+                        Our nurses and attendants are professionally trained, background-verified, and assigned with consistency to ensure residents receive attentive, compassionate, and personalised care. With 24×7 CCTV surveillance, emergency call bells in every room, hourly night nursing rounds, and additional monitoring whenever required, we prioritise the safety, comfort, and well-being of every resident. Visiting physicians conduct regular health reviews to ensure appropriate medical supervision.
                     </p>
 
                     <!-- Quote Block with Trust Colors -->
                     <div class="p-6 md:p-8 bg-slate-50 border-l-4 border-umed-red rounded-r-2xl shadow-xs">
                         <p class="text-slate-700 italic text-base md:text-lg leading-relaxed font-medium">
-                            "Emergency call bells in every room, 24×7 CCTV, night nursing rounds every two hours, and a visiting physician who reviews every resident regularly. We want families to feel confident, relieved, and supported."
+                            &ldquo;With 24×7 CCTV surveillance, hourly night nursing rounds, additional checks whenever needed, and regular physician visits, we strive to help residents feel safe and families feel confident, relieved, and supported.&rdquo;
                         </p>
                         <p class="text-xs font-bold text-umed-navy mt-3 uppercase tracking-wider">
                             &mdash; Medical & Administration Team, Umed Care Centre
                         </p>
                     </div>
 
-                    <div class="pt-2 flex flex-wrap gap-3">
-                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">2-Hourly Night Rounds</span>
+                    <div class="pt-2 flex flex-wrap gap-2.5">
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">24×7 CCTV Surveillance</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Hourly Night Nursing Rounds</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Additional Monitoring Whenever Required</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Emergency Call Bells in Every Room</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Regular Doctor Check-ups</span>
                         <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Physician-Led Health Reviews</span>
                         <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Hygienic Sponging & Diaper Care</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Dressing Assistance</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Mouth Care</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Hair Care</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Nail Cutting</span>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Eye Wash</span>
                         <span class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Compassionate Family Updates</span>
                     </div>
 
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Founder Section -->
+    <section id="founder" class="py-20 md:py-28 bg-gradient-to-b from-white via-amber-50/30 to-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
+                
+                <!-- Founder Photo Column (Left - 5 cols) -->
+                <div class="lg:col-span-5">
+                    <div class="sticky top-28 space-y-6">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <!-- Decorative backdrop highlight -->
+                            <div class="absolute -inset-2 bg-gradient-to-tr from-umed-navy/20 to-umed-gold/30 rounded-3xl blur-xl opacity-70 -z-10"></div>
+                            
+                            <!-- Image Frame -->
+                            <div class="bg-white p-3 md:p-4 rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+                                <div class="relative rounded-2xl overflow-hidden bg-slate-100 aspect-[4/5] max-h-[520px]">
+                                    <img src="founder-dr-ranjana-kadam.png" 
+                                         alt="Dr. Ranjana Kadam-Powar - Founder, Umed Care Centre" 
+                                         class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-umed-navy/70 via-transparent to-transparent"></div>
+                                    <div class="absolute bottom-4 left-4 right-4 text-white">
+                                        <span class="inline-block px-3 py-1 bg-umed-gold text-umed-navy text-xs font-bold rounded-md mb-1 shadow-sm">
+                                            Founder &amp; Care Director
+                                        </span>
+                                        <h3 class="text-xl md:text-2xl font-bold leading-tight">Dr. Ranjana Kadam-Powar</h3>
+                                        <p class="text-xs text-slate-200">Founder, Umed Care Centre &bull; OM Prathishthan Trust</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Founder Highlights Card -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm max-w-md mx-auto lg:max-w-none space-y-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-umed-green-light text-umed-green-dark flex items-center justify-center font-bold text-lg">
+                                    26
+                                </div>
+                                <div>
+                                    <div class="text-sm font-bold text-umed-navy">26 Years of Dedicated Service</div>
+                                    <div class="text-xs text-slate-500">Continuous compassionate care since 2000</div>
+                                </div>
+                            </div>
+                            <div class="h-px bg-slate-100"></div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-umed-red-light text-umed-red flex items-center justify-center font-bold">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-bold text-umed-navy">Compassion Meets Dignity</div>
+                                    <div class="text-xs text-slate-500">Every life deserves respect and personalized care</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founder Letter Column (Right - 7 cols) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-green-dark bg-umed-green-light px-3 py-1 rounded-md border border-umed-green/20 mb-3">
+                            Our Founder's Vision
+                        </span>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-umed-navy tracking-tight">
+                            A Message from Founder
+                        </h2>
+                    </div>
+
+                    <!-- Highlighted Quote Block -->
+                    <div class="bg-white p-6 md:p-8 rounded-2xl border-l-4 border-umed-gold border-slate-200 shadow-sm relative">
+                        <svg class="w-10 h-10 text-umed-gold/30 absolute top-4 right-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                        <p class="text-xl md:text-2xl font-bold text-umed-navy italic leading-snug">
+                            “Every Life Deserves Care, Dignity, and Hope.”
+                        </p>
+                    </div>
+
+                    <!-- Body Paragraphs from Founder -->
+                    <div class="space-y-4 text-slate-700 text-base md:text-lg leading-relaxed">
+                        <p>
+                            When I began this journey 26 years ago, I had one simple belief — <strong>no individual should feel helpless, forgotten, or alone at a time when they need care the most.</strong>
+                        </p>
+
+                        <p>
+                            Over the years, I have witnessed the challenges faced by individuals who are unable to manage their daily lives independently, as well as the emotional struggles of families who want to provide the best possible care for their loved ones.
+                        </p>
+
+                        <p>
+                            These experiences have shaped my purpose and strengthened my commitment to <strong>Umeed Care Centre</strong>.
+                        </p>
+
+                        <p>
+                            For me, Umeed has never been just an institution. It is a responsibility, a commitment, and a place where compassion meets care.
+                        </p>
+
+                        <p>
+                            Our journey has not always been easy. There have been challenges, difficult moments, and countless responsibilities. But every small improvement in someone’s comfort, every reassuring smile, and every family that places its trust in us reminds me why this journey matters.
+                        </p>
+
+                        <p>
+                            Today, Umeed provides support to elderly individuals and people living with conditions such as <strong>paralysis, dementia, Alzheimer’s, prolonged immobility</strong>, and other situations requiring assisted or dependent care.
+                        </p>
+
+                        <p>
+                            But beyond these services, what matters most to me is how we treat every individual — <strong>with patience, respect, understanding, and dignity.</strong>
+                        </p>
+
+                        <p>
+                            I am deeply grateful to the dedicated team that stands beside me and to the families who have trusted Umeed over the years. Their support has helped turn a simple vision into a meaningful journey of 26 years.
+                        </p>
+
+                        <!-- Secondary Callout -->
+                        <div class="p-6 rounded-2xl bg-amber-50/80 border border-amber-200/80 text-amber-950 font-medium">
+                            <p class="text-sm uppercase tracking-wider text-umed-gold-dark font-bold mb-1">Our Core Conviction</p>
+                            <p class="text-base md:text-lg italic">
+                                “Care is not merely about helping someone live. It is about making them feel valued, respected, and never alone.”
+                            </p>
+                        </div>
+
+                        <p>
+                            As we move forward, my commitment is to continue nurturing Umeed with the same compassion, dedication, and sense of responsibility with which this journey began.
+                        </p>
+
+                        <p class="text-umed-navy font-semibold text-lg">
+                            Because to me, Umeed is more than a name. It is hope, and hope deserves to be kept alive.
+                        </p>
+                    </div>
+
+                    <!-- Founder Sign-off Block -->
+                    <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <h4 class="text-2xl font-bold text-umed-navy">Dr. Ranjana Kadam-Powar</h4>
+                            <p class="text-slate-600 font-semibold text-sm">Founder, Umeed Care Centre</p>
+                            <p class="text-umed-gold-dark font-bold text-xs uppercase tracking-wider mt-0.5">26 Years of Compassionate Care | Since 2000</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-umed-navy hover:bg-slate-800 text-white text-sm font-bold shadow-md transition-all self-start sm:self-auto">
+                            <span>Connect With Us</span>
+                            <svg class="w-4 h-4 text-umed-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -450,21 +629,21 @@
                 </p>
             </div>
 
-            <!-- 7 Services Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 8 Services Grid: Perfectly balanced in 2 rows of 4 on Laptop & Desktop -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <!-- 1. Long-Term Care -->
                 <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
                     <div>
                         <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
-                            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Long-Term Elder Care" class="w-full h-full object-cover">
+                            <img src="longterm-care.jpg" alt="Long-Term Elder Care" class="w-full h-full object-cover">
                             <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                                 01 &bull; Core Care
                             </div>
                         </div>
                         <h3 class="text-xl font-bold text-umed-navy mb-2">Long-Term Care</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Compassionate long-term care and daily support for elderly and bedridden patients who require continuous assistance in a safe, homely setting.
+                            Compassionate long-term care and daily assistance for elderly, bedridden, coma, Alzheimer’s, and dementia patients in a safe, comfortable, and homely environment.
                         </p>
                     </div>
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
@@ -473,43 +652,43 @@
                     </div>
                 </div>
 
-                <!-- 2. Qualified Nurses & Care Staff -->
+                <!-- 2. Qualified Nurses & Ward Boys -->
                 <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
                     <div>
                         <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
-                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Qualified Nurses & Care Staff" class="w-full h-full object-cover">
+                            <img src="qualified-nurse.jpg" alt="Qualified 24/7 Nurses & Ward Boys" class="w-full h-full object-cover object-top">
                             <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                                02 &bull; Professional Staff
+                                02 &bull; 24/7 Staff
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-umed-navy mb-2">Qualified Nurses & Care Staff</h3>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Qualified 24/7 Nurses &amp; Ward Boys</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Fully qualified nurses, Aaya and Ward Boy staff providing dedicated, compassionate, and patient-centered clinical care at all hours.
+                            Qualified nurses and dedicated ward boys available 24/7 around the clock. Our team provides attentive bedside nursing, mobility assistance, medication management, and continuous, compassionate care.
                         </p>
                     </div>
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
-                        <span>Background Verified</span>
-                        <span class="text-umed-green font-bold">&bull; Loving Support</span>
+                        <span>Round-the-Clock</span>
+                        <span class="text-umed-green font-bold">&bull; Nurses &amp; Ward Boys</span>
                     </div>
                 </div>
 
-                <!-- 3. Doctor Check-up & Health Monitoring -->
+                <!-- 3. Daily Doctor's Visit -->
                 <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
                     <div>
                         <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
-                            <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Doctor Check-up & Health Monitoring" class="w-full h-full object-cover">
+                            <img src="doctor-checkup.jpg" alt="Daily Doctor's Visit" class="w-full h-full object-cover">
                             <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                                03 &bull; Clinical Oversight
+                                03 &bull; Daily Doctor's Visit
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-umed-navy mb-2">Doctor Check-up & Health Monitoring</h3>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Daily Doctor's Visit</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Regular doctor check-ups with rigorous temperature, oxygen, and pulse monitoring three times a day, backed by 24-hour emergency protocols.
+                            Daily doctor's visit to examine residents, review clinical progress, assess medication regimens, and coordinate specialized medical interventions as needed.
                         </p>
                     </div>
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
-                        <span>3× Daily Vitals</span>
-                        <span class="text-umed-green font-bold">&bull; Daily Physician Visit</span>
+                        <span>Daily Doctor's Visit</span>
+                        <span class="text-umed-green font-bold">&bull; Health Monitoring</span>
                     </div>
                 </div>
 
@@ -517,14 +696,14 @@
                 <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
                     <div>
                         <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
-                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Specialist Medical Consultation" class="w-full h-full object-cover">
+                            <img src="specialist-consultation.jpg" alt="Specialist Medical Consultation" class="w-full h-full object-cover">
                             <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
                                 04 &bull; Multi-Specialty
                             </div>
                         </div>
                         <h3 class="text-xl font-bold text-umed-navy mb-2">Specialist Consultation</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Prompt consultations with Orthopedic Specialists, Physicians, Surgeons, Physiotherapists, and Psychiatrists as needed for each resident.
+                            We provide consultations with physicians, surgeons, psychiatrists, neurosurgeons (brain surgeons), orthopedic specialists, and physiotherapists as per each resident’s medical needs and requirements.
                         </p>
                     </div>
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
@@ -533,71 +712,227 @@
                     </div>
                 </div>
 
-                <!-- 5. Bedridden & Specialized Care -->
+                <!-- 5. Bedridden & Specialized Clinical Care -->
                 <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
                     <div>
                         <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
-                            <img src="https://images.unsplash.com/photo-1516841273335-e39b37888115?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bedridden & Specialized Care" class="w-full h-full object-cover">
+                            <img src="male-female-nurses.jpg" alt="Specialized bedridden medical and nursing care with oxygen backup" class="w-full h-full object-cover">
                             <div class="absolute top-3 left-3 bg-umed-red text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                                05 &bull; Intensive Nursing
+                                05 &bull; Intensive Clinical Care
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-umed-navy mb-2">Bedridden & Specialized Care</h3>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Bedridden &amp; Specialized Clinical Care</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Dedicated care for patients with coma, paralysis, dementia, Alzheimer’s, bedsores, and age-related conditions, with 24/7 medical and emergency support.
+                            Specialized medical and nursing care tailored for bedridden, paralyzed, and disabled individuals. Fully equipped with <strong>24/7 on-site oxygen backup</strong>, pressure-relieving air/water beds, structured protocols for emergency cases, and multi-specialty hospital tie-ups.
                         </p>
                     </div>
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
-                        <span>Air & Water Beds</span>
-                        <span class="text-umed-red font-bold">&bull; 24/7 Emergency</span>
+                        <span>Oxygen Backup &amp; Air Beds</span>
+                        <span class="text-umed-red font-bold">&bull; 24/7 Emergency Cases</span>
                     </div>
                 </div>
 
-                <!-- 6. Customized Diet & Feeding Support -->
+                <!-- 6. Nutritious Care & Nasal Feeding Tube Support -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="grid grid-cols-2 gap-2 h-48 rounded-xl overflow-hidden mb-5 relative bg-slate-100">
+                            <div class="relative h-full overflow-hidden rounded-lg group">
+                                <img src="nurse-spoon-feeding.jpg" alt="Caregiver feeding patient by spoon" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow-xs">Spoon Feeding</span>
+                            </div>
+                            <div class="relative h-full overflow-hidden rounded-lg group">
+                                <img src="nurse-tube-feeding.jpg" alt="Nurse providing nasal feeding tube support" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow-xs">Nasal Feeding Tube</span>
+                            </div>
+                            <div class="absolute top-2.5 left-2.5 bg-umed-navy/95 backdrop-blur-xs text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs z-10">
+                                06 &bull; Nutritious Care
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Nutritious Care &amp; Nasal Feeding Tube Support</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Wholesome nutrition and customized nutritious care prepared as per each resident's medical condition, with attentive oral spoon-feeding and expert nasal feeding tube support when required.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                        <span>Nutritious Diets</span>
+                        <span class="text-umed-green font-bold">&bull; Nasal Feeding Tube Support</span>
+                    </div>
+                </div>
+
+                <!-- 7. Exercise, Yoga & Physiotherapy -->
+                <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
+                    <div>
+                        <div class="grid grid-cols-2 gap-2 h-48 rounded-xl overflow-hidden mb-5 relative bg-slate-100">
+                            <div class="relative h-full overflow-hidden rounded-lg group">
+                                <img src="physiotherapy-care.jpg" alt="Physiotherapist providing therapy to patient" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow-xs">Physiotherapy</span>
+                            </div>
+                            <div class="relative h-full overflow-hidden rounded-lg group">
+                                <img src="yoga-meditation-care.jpg" alt="People practicing yoga and meditation" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute bottom-1.5 left-1.5 bg-black/75 backdrop-blur-xs text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow-xs">Guided Yoga</span>
+                            </div>
+                            <div class="absolute top-2.5 left-2.5 bg-umed-green text-white text-[10px] font-bold px-2.5 py-1 rounded-md shadow-xs z-10">
+                                07 &bull; Physical Wellbeing
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Exercise, Yoga &amp; Physiotherapy</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            We support better mobility, flexibility, and overall health with daily exercise routines, guided yoga sessions, and professional physiotherapy tailored to each resident's recovery goals.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                        <span>Mobility Care</span>
+                        <span class="text-umed-green font-bold">&bull; Daily Therapy</span>
+                    </div>
+                </div>
+
+                <!-- 8. Back Care & Bedsore Dressing -->
                 <div class="bg-white rounded-2xl p-6 medical-card flex flex-col justify-between">
                     <div>
                         <div class="h-48 rounded-xl overflow-hidden mb-5 bg-slate-100 relative">
-                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Customized Diet & Feeding Support" class="w-full h-full object-cover">
-                            <div class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                                06 &bull; Nutrition
+                            <img src="bedsore-dressing-care.jpg" alt="Trained nurse gently performing bedsore dressing and wound care" class="w-full h-full object-cover">
+                            <div class="absolute top-3 left-3 bg-umed-red text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-xs">
+                                08 &bull; Skin &amp; Wound Care
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-umed-navy mb-2">Customized Diet & Feeding Support</h3>
+                        <h3 class="text-xl font-bold text-umed-navy mb-2">Back Care &amp; Bedsore Dressing</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Nutritious, customized diets based on each patient's medical condition, with skilled oral feeding and nasogastric (NG) tube feeding support when required.
+                            Specialised back care and bedsore dressing to maintain skin hygiene, promote wound healing, and prevent complications through regular sterile dressing changes and 2-hourly repositioning.
                         </p>
                     </div>
                     <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-semibold">
-                        <span>Diabetic / Renal Diets</span>
-                        <span class="text-umed-green font-bold">&bull; NG Tube Support</span>
+                        <span>Wound Management</span>
+                        <span class="text-umed-red font-bold">&bull; Regular Dressing</span>
                     </div>
                 </div>
 
-                <!-- 7. Exercise, Back Care & Personal Support (Wide card spanning all 3 columns on large screens, 2 on tablet) -->
-                <div class="bg-white rounded-2xl p-6 md:p-8 medical-card md:col-span-2 lg:col-span-3 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 border-l-4 border-l-umed-green">
-                    <div class="w-full lg:w-1/3 h-52 rounded-xl overflow-hidden shrink-0 bg-slate-100 relative">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Exercise, Back Care & Personal Support" class="w-full h-full object-cover">
-                        <div class="absolute top-3 left-3 bg-umed-green text-white text-[11px] font-bold px-2.5 py-1 rounded-md">
-                            07 &bull; Physical Wellbeing
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-2/3 space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="text-xs font-bold text-umed-green uppercase tracking-wider">Comprehensive Therapy Routine</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-umed-navy">Exercise, Back Care & Personal Support</h3>
-                        <p class="text-slate-600 leading-relaxed text-base">
-                            Daily assisted exercise, back care, repositioning, personal hygiene, and other supportive care essential for patient comfort, joint mobility, and overall wellbeing.
-                        </p>
-                        <div class="pt-2 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
-                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Assisted Mobility Drills</span>
-                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Frequent Repositioning</span>
-                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Skin & Spine Care</span>
-                            <span class="bg-slate-100 border border-slate-200 px-3 py-1.5 rounded-md">Personal Hygiene Support</span>
-                        </div>
-                    </div>
+            </div>
+
+            <!-- Dedicated Condition Protocols: Paralyzed, Dementia & Bedsore Management -->
+            <div id="condition-protocols" class="mt-16 pt-12 border-t border-slate-200">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-red bg-umed-red-50 px-3 py-1 rounded-md border border-umed-red/20 mb-3">
+                        Clinical Care Standards
+                    </span>
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-umed-navy">
+                        Dedicated Condition Protocols: Paralyzed, Dementia &amp; Bedsores
+                    </h3>
+                    <p class="text-slate-600 text-sm md:text-base mt-3">
+                        Structured, doctor-guided protocols designed to maintain clinical stability, skin integrity, cognitive peace, and dignity for high-dependency residents.
+                    </p>
                 </div>
 
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Protocol 1: Paralyzed Care Protocol -->
+                    <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border-t-4 border-t-umed-gold-dark">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-umed-gold-dark bg-amber-50 px-2.5 py-1 rounded border border-amber-200">Mobility &amp; Rehabilitation</span>
+                                <span class="w-8 h-8 rounded-full bg-amber-100 text-umed-gold-dark flex items-center justify-center font-bold text-xs">01</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-umed-navy mb-2">Paralyzed Care Protocol</h4>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-4">
+                                Specialized assistance for stroke recovery, partial or full paralysis, and spinal mobility restrictions.
+                            </p>
+                            <ul class="space-y-2.5 text-xs text-slate-700">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Safe Transfers:</strong> 2-person assisted bed-to-wheelchair transfers.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Passive Physiotherapy:</strong> Daily limb exercises to prevent muscle contractures.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Posture &amp; Alignment:</strong> Pillow positioning to relieve joint pressure.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Hygiene Assistance:</strong> Bedside sponge baths, catheter &amp; diaper care.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-500">
+                            <span>Limb Care &amp; Mobility</span>
+                            <span class="text-umed-green font-bold">&bull; Daily Protocol</span>
+                        </div>
+                    </div>
+
+                    <!-- Protocol 2: Dementia Care Protocol -->
+                    <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border-t-4 border-t-umed-navy">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-umed-navy bg-slate-100 px-2.5 py-1 rounded border border-slate-200">Cognitive Safety</span>
+                                <span class="w-8 h-8 rounded-full bg-slate-100 text-umed-navy flex items-center justify-center font-bold text-xs">02</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-umed-navy mb-2">Dementia Care Protocol</h4>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-4">
+                                Compassionate, patient-centered framework for individuals with dementia, memory loss, and Alzheimer's.
+                            </p>
+                            <ul class="space-y-2.5 text-xs text-slate-700">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Calm Daily Routines:</strong> Predictable daytime schedules to prevent confusion.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>24/7 Safety Supervision:</strong> Round-the-clock monitoring and wandering prevention.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Empathetic Communication:</strong> Patient verbal cues with gentle reassurance.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Assisted Living:</strong> Patient guidance for meals, dressing, and hygiene.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-500">
+                            <span>Memory &amp; Safety</span>
+                            <span class="text-umed-green font-bold">&bull; 24/7 Monitored</span>
+                        </div>
+                    </div>
+
+                    <!-- Protocol 3: Bedsore Management Protocol -->
+                    <div class="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-full border-t-4 border-t-umed-red">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-umed-red bg-red-50 px-2.5 py-1 rounded border border-red-200">Skin Integrity &amp; Healing</span>
+                                <span class="w-8 h-8 rounded-full bg-red-100 text-umed-red flex items-center justify-center font-bold text-xs">03</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-umed-navy mb-2">Bedsore Management Protocol</h4>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-4">
+                                Intensive clinical protocol for preventing and managing pressure ulcers in bedridden residents.
+                            </p>
+                            <ul class="space-y-2.5 text-xs text-slate-700">
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Strict 2-Hour Turning:</strong> Scheduled lateral left, back, and right turning.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Air &amp; Water Mattresses:</strong> Continuous pressure relief across pressure points.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Sterile Antiseptic Dressing:</strong> Daily cleaning, medication, and wound care.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-4 h-4 text-umed-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                                    <span><strong>Nutritional Healing:</strong> High-protein diet and skin barrier creams.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-500">
+                            <span>Wound &amp; Skin Care</span>
+                            <span class="text-umed-red font-bold">&bull; 2-Hour Turning</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <!-- Callout linking to the dedicated Specialized Care Page -->
@@ -607,8 +942,8 @@
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <div>
-                        <h4 class="font-bold text-umed-navy text-lg">Looking for Condition-Specific Medical Pathways?</h4>
-                        <p class="text-slate-600 text-sm">We provide tailored care protocols for Dementia, Alzheimer’s, Paralysis, Coma, and Pressure Sores.</p>
+                        <h4 class="font-bold text-umed-navy text-lg">Looking for In-Depth Condition Protocols?</h4>
+                        <p class="text-slate-600 text-sm">Explore our 7 specialized care programs for Paralysis, Dementia, Alzheimer’s, Bedsores, and Coma Care.</p>
                     </div>
                 </div>
                 <a href="specialized-care.html" class="bg-umed-navy hover:bg-slate-800 text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-xs transition-colors shrink-0 flex items-center gap-2">
@@ -620,54 +955,696 @@
         </div>
     </section>
 
-    <!-- Why Families Trust Us Section -->
-    <section id="why-trust" class="py-20 md:py-28 bg-white">
+    <!-- Gallery Section: Moments of Life, Celebrations & Intergenerational Connection -->
+    <section id="gallery" class="py-20 md:py-28 bg-white border-t border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+                <div>
+                    <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-green-dark bg-umed-green-light px-3 py-1 rounded-md border border-umed-green/20 mb-3">
+                        Life at Umed Care Centre
+                    </span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-umed-navy tracking-tight">
+                        Our Photo Gallery
+                    </h2>
+                    <p class="text-slate-600 text-base md:text-lg mt-3 max-w-2xl">
+                        A glimpse into the daily warmth, festive celebrations, student visits, and compassionate bedside connections that bring life and dignity to our residents.
+                    </p>
+                </div>
+                <div class="flex items-center gap-2 self-start md:self-end">
+                    <span class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-umed-green animate-pulse"></span>
+                        Real Moments &bull; Real Care
+                    </span>
+                </div>
+            </div>
+
+            <!-- Gallery 4-Card Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Gallery Item 1: Cultural Festivities -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-festival-celebration.jpg" 
+                                 alt="Ganeshutsav and Festive Celebration at Umed Care Centre" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-gold text-umed-navy text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Festive Celebration
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Ganeshutsav Celebrations
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Bringing vibrant spiritual traditions, aarti, and festive joy to our elders, caregivers, and visiting youth.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Spiritual &amp; Emotional Well-Being
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2: Intergenerational Youth Visits -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-students-visit.jpg" 
+                                 alt="Students Visiting and Interacting at Umed Care Centre" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Youth Outreach
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                School Student Visits
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Young students visit Umed regularly to learn respect, share smiles, and bring youthful enthusiasm to resident seniors.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Intergenerational Bonding
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3: Bedside Care and Human Connection -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-patient-interaction.jpg" 
+                                 alt="Students and Caregivers at Resident Bedside" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-red text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Bedside Comfort
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Compassionate Connection
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Bedside interactions ensure bedridden and dependent patients never feel isolated or forgotten in their care journey.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-red" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Dignity &bull; Reassurance
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4: Community Gatherings & Music -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-community-event.jpg" 
+                                 alt="Community Gatherings and Music Sessions at Umed" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-green text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Community Spirit
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Music &amp; Togetherness
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Collective music sessions, bhajans, and storytelling hours that uplift spirits and build community belonging.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Joyful Community Living
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5: Students Singing Programme -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-students-singing.jpg"
+                                 alt="School Students Singing and Performing at Umed Care Centre"
+                                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Cultural Programme
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Students' Singing Session
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                School students engage in a heartfelt singing programme, bringing joy and warmth to the residents of Umed Care Centre.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-navy" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Music &bull; Joy &bull; Community
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6: Aarti Ceremony with Students -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-aarti-ceremony.jpg"
+                                 alt="Aarti Ceremony with Staff and Students at Umed Care Centre during Ganeshutsav"
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-gold text-umed-navy text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Ganeshutsav
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Aarti Ceremony &amp; Devotion
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Staff and visiting students participate together in the sacred aarti ceremony amidst vibrant festive decorations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Spiritual &bull; Festive Traditions
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7: Group Photo at Entrance -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-students-group-photo.jpg"
+                                 alt="Students and Staff Group Photo at Umed Care Centre Entrance"
+                                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-green text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Visit Memories
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Group Photo with Students
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                A cherished group photo of visiting students and Umed Care Centre staff at the festively decorated entrance during Ganeshutsav.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Togetherness &bull; Warm Memories
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 8: Founder Performing Aarti -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-founder-aarti.jpg"
+                                 alt="Dr. Ranjana Kadam-Powar Performing Aarti at Umed Care Centre"
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-red text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Founder's Devotion
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Founder's Sacred Aarti
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Dr. Ranjana Kadam-Powar performs the sacred aarti, reflecting the compassionate and spiritually rooted values that define Umed Care Centre.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-red" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Compassion &bull; Spiritual Values
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 9: Ganesh Entrance During Ganeshutsav -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-entrance-ganesh.jpg"
+                                 alt="Beautifully Decorated Umed Care Centre Entrance During Ganeshutsav"
+                                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-gold text-umed-navy text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Festival Décor
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Ganesh Puja at the Entrance
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                The beautifully adorned entrance of Umed Care Centre with a Ganesh idol, marigold garlands, and colorful lights during Ganeshutsav celebrations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Festive Spirit &bull; Tradition &bull; Joy
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 10: Staff Team Photo -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-staff-team.jpg"
+                                 alt="Nursing and Care Staff Team at Umed Care Centre during Ganeshutsav"
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-green text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Our Team
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Dedicated Nursing Staff
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Our committed nursing and care staff celebrate Ganeshutsav together — the compassionate team behind every resident's comfort and well-being.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Teamwork &bull; Dedication
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 11: Boys Playing Dholak -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-dholak-boys.jpg"
+                                 alt="School Boys Playing Dholak at Umed Care Centre"
+                                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-navy text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Musical Talent
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Dholak Performance
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Young students showcase their musical talent with a spirited dholak performance, filling the centre with rhythm and festive energy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-navy" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Music &bull; Rhythm &bull; Energy
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 12: Students Touring Facility -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 sm:h-72 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-students-facility-tour.jpg"
+                                 alt="School Students Touring Umed Care Centre Facility"
+                                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            <span class="absolute top-3 left-3 bg-umed-red text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+                                Facility Tour
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-bold text-umed-navy mb-2 group-hover:text-umed-green-dark transition-colors">
+                                Students Explore Umed
+                            </h3>
+                            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                Students take a guided tour through the care facility, learning about the compassionate services and daily routines at Umed Care Centre.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-0">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-umed-navy">
+                            <svg class="w-3.5 h-3.5 text-umed-red" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Awareness &bull; Learning
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 13: Featured Spotlight - Group Aarti with Students -->
+                <div class="group md:col-span-2 lg:col-span-3 bg-gradient-to-r from-slate-50 via-amber-50/20 to-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="grid grid-cols-1 md:grid-cols-12 items-center">
+                        <div class="md:col-span-7 h-72 md:h-84 overflow-hidden relative bg-slate-100">
+                            <img src="gallery-group-aarti.jpg"
+                                 alt="Group Aarti with Students and Staff at Umed Care Centre Ganeshutsav"
+                                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 md:hidden"></div>
+                            <span class="absolute top-4 left-4 bg-umed-gold text-umed-navy text-xs font-bold px-3 py-1.5 rounded-md shadow-sm">
+                                Featured Community Spotlight
+                            </span>
+                        </div>
+                        <div class="md:col-span-5 p-6 md:p-8 flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-umed-green-dark uppercase tracking-wider block mb-1">Intergenerational Bonding</span>
+                                <h3 class="text-xl md:text-2xl font-bold text-umed-navy mb-3 group-hover:text-umed-green-dark transition-colors">
+                                    Community Aarti Together
+                                </h3>
+                                <p class="text-slate-600 text-sm md:text-base leading-relaxed mb-4">
+                                    School students, teachers, residents, and Umed staff gather in unison for a sacred aarti. These heart-touching moments restore dignity, joy, and a deep sense of belonging to our senior residents.
+                                </p>
+                            </div>
+                            <div class="pt-4 border-t border-slate-200/80 flex items-center justify-between">
+                                <span class="inline-flex items-center gap-2 text-xs font-bold text-umed-navy">
+                                    <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    Unity &bull; Devotion &bull; Shared Joy
+                                </span>
+                                <span class="text-xs text-slate-500 font-medium">Ganeshutsav Celebration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Gallery Bottom Callout -->
+            <div class="mt-12 p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-umed-gold/20 text-umed-gold-dark flex items-center justify-center font-bold">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-umed-navy">Experience Umed Care Centre in Person</p>
+                        <p class="text-xs text-slate-500">Families are always welcome to visit our facility and meet our clinical team.</p>
+                    </div>
+                </div>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-umed-red hover:bg-umed-red-dark text-white text-xs font-bold shadow-sm transition-colors whitespace-nowrap">
+                    Plan a Facility Visit
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Family Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-28 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+
+            <!-- Section Header -->
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-red bg-umed-red-50 px-3 py-1 rounded-md border border-umed-red/20 mb-3">
-                    Safety, Dignity & Peace of Mind
+                <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-green-dark bg-umed-green-light px-3 py-1 rounded-md border border-umed-green/20 mb-3">
+                    Trusted by Families
                 </span>
-                <h2 class="text-3xl md:text-4xl font-bold text-umed-navy">
-                    Why Families Across Pune Choose Umed
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-umed-navy tracking-tight">
+                    Family Testimonials
                 </h2>
-                <p class="text-slate-600 text-base md:text-lg mt-3">
-                    We treat your family members with the utmost professional responsibility, transparent updates, and genuine human warmth.
+                <p class="text-slate-600 text-base md:text-lg mt-4 leading-relaxed">
+                    Real experiences from families whose loved ones have received care and support at Umeed Care Centre.
+                    <br class="hidden md:block">
+                    <span class="text-xs text-slate-400 font-medium italic mt-1 inline-block">Reviews translated into English and lightly edited for website readability. Names excluded for privacy.</span>
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-                    <div class="w-12 h-12 rounded-xl bg-umed-red text-white flex items-center justify-center font-bold mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+            <!-- Star Rating Row & Summary Strip -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-14 p-5 rounded-2xl bg-white border border-slate-200 shadow-sm max-w-2xl mx-auto">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-umed-navy leading-none">5.0</div>
+                    <div class="flex gap-1 justify-center mt-1.5">
+                        <svg class="w-5 h-5 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-umed-navy mb-3">Emergency Call Bells & CCTV</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Every single room and bed is equipped with instant caregiver call bells and monitored with 24×7 CCTV systems for total safety and rapid medical response.
-                    </p>
+                    <p class="text-xs text-slate-500 mt-1 font-semibold">Average Rating</p>
+                </div>
+                <div class="hidden sm:block w-px h-12 bg-slate-200"></div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-umed-green-dark leading-none">7</div>
+                    <p class="text-xs text-slate-500 mt-1 font-semibold">Written Reviews</p>
+                </div>
+                <div class="hidden sm:block w-px h-12 bg-slate-200"></div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-umed-navy leading-none">Real Families</div>
+                    <p class="text-xs text-slate-500 mt-1 font-semibold">Genuine Experiences</p>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex gap-0.5">
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <svg class="w-9 h-9 text-umed-green-light" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-umed-green-dark bg-umed-green-light px-2.5 py-1 rounded-md">Compassionate Care</span>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mt-3 italic">
+                            "My loved one received care at Umeed Care Centre for a considerable period. During this time, we experienced genuine support and personal attention from the staff. Their approach towards patients is caring and understanding. We are grateful for the support and services provided."
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-umed-navy text-white flex items-center justify-center font-bold text-sm shrink-0">F</div>
+                        <div>
+                            <p class="text-sm font-bold text-umed-navy">Family Member</p>
+                            <p class="text-xs text-slate-500">Umeed Care Centre Resident's Family</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-                    <div class="w-12 h-12 rounded-xl bg-umed-green text-white flex items-center justify-center font-bold mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex gap-0.5">
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <svg class="w-9 h-9 text-umed-green-light" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-umed-navy bg-slate-100 px-2.5 py-1 rounded-md">Dedicated Service</span>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mt-3 italic">
+                            "We have experienced the dedicated service provided by Umeed Care Centre. The staff members are cooperative, and their approach towards residents and their families is respectful. We appreciate the efforts made to ensure that residents receive proper attention and care."
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold text-umed-navy mb-3">Consistent Staff Assignment</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        We don't rotate unfamiliar strangers daily. Our nurses and attendants are assigned consistently so that meaningful trust and emotional bonding develop.
-                    </p>
+                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-umed-green text-white flex items-center justify-center font-bold text-sm shrink-0">F</div>
+                        <div>
+                            <p class="text-sm font-bold text-umed-navy">Family Member</p>
+                            <p class="text-xs text-slate-500">Umeed Care Centre Resident's Family</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-                    <div class="w-12 h-12 rounded-xl bg-umed-gold-dark text-white flex items-center justify-center font-bold mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex gap-0.5">
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <svg class="w-9 h-9 text-umed-green-light" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-umed-red bg-umed-red-50 px-2.5 py-1 rounded-md">Support During Difficulty</span>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mt-3 italic">
+                            "My mother was admitted to a care centre when she required assistance. During her stay, the caregivers looked after her needs and provided the necessary support. We appreciate their efforts and the care they provided during a difficult period for our family."
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold text-umed-navy mb-3">Charitable Trust Values</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Operating under OM Prathishthan Charitable Trust, our decisions prioritize patient wellbeing, dignity, and family accessibility over commercial pressure.
-                    </p>
+                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-umed-red text-white flex items-center justify-center font-bold text-sm shrink-0">F</div>
+                        <div>
+                            <p class="text-sm font-bold text-umed-navy">Family Member</p>
+                            <p class="text-xs text-slate-500">Daughter of a Former Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex gap-0.5">
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <svg class="w-9 h-9 text-umed-green-light" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md">Care That Makes a Difference</span>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mt-3 italic">
+                            "My mother stayed at a care centre for approximately two years. She was experiencing significant health difficulties, and the staff provided assistance during her stay. We noticed positive changes in her condition and were satisfied with the care and support she received. The staff were helpful and cooperative."
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold text-sm shrink-0">F</div>
+                        <div>
+                            <p class="text-sm font-bold text-umed-navy">Patient's Family Member</p>
+                            <p class="text-xs text-slate-500">Family of a 2-Year Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex gap-0.5">
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <svg class="w-9 h-9 text-umed-green-light" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-umed-green-dark bg-umed-green-light px-2.5 py-1 rounded-md">Comfort &amp; Reassurance</span>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mt-3 italic">
+                            "My loved one stayed at Umeed Care Centre and received care and assistance from the team. The staff members were supportive and attentive to daily needs. Their approach gave our family reassurance during a challenging time. We sincerely appreciate their services."
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-umed-navy text-white flex items-center justify-center font-bold text-sm shrink-0">F</div>
+                        <div>
+                            <p class="text-sm font-bold text-umed-navy">Family Member</p>
+                            <p class="text-xs text-slate-500">Umeed Care Centre Resident's Family</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex gap-0.5">
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <svg class="w-9 h-9 text-umed-green-light" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <div class="mb-2">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-700 bg-slate-100 px-2.5 py-1 rounded-md">Supportive Environment</span>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mt-3 italic">
+                            "Our family member stayed at the centre for approximately two to three months. During this period, the care and support provided by the staff were satisfactory. We appreciated the attention given to everyday needs and the cooperative nature of the team."
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-slate-600 text-white flex items-center justify-center font-bold text-sm shrink-0">F</div>
+                        <div>
+                            <p class="text-sm font-bold text-umed-navy">Family Member</p>
+                            <p class="text-xs text-slate-500">Family of a Short-Stay Resident</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
+
+            <!-- Testimonial 7: Wide Feature Card -->
+            <div class="mt-6 bg-gradient-to-r from-umed-navy via-umed-navy to-slate-800 rounded-2xl p-7 md:p-9 flex flex-col md:flex-row gap-7 items-start text-white border border-umed-navy shadow-xl">
+                <div class="shrink-0 flex flex-col items-center gap-2">
+                    <div class="w-14 h-14 rounded-2xl bg-umed-gold text-umed-navy flex items-center justify-center font-extrabold text-2xl shadow-lg">H</div>
+                    <div class="flex gap-0.5 mt-1">
+                        <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-4 h-4 text-umed-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-umed-gold bg-umed-gold/10 border border-umed-gold/30 px-2.5 py-1 rounded-md mb-3">Attention to Everyday Needs</span>
+                    <p class="text-slate-200 text-sm md:text-base leading-relaxed italic mb-5">
+                        "My wife stayed at the care centre for approximately six months. During her stay, the staff were cooperative and provided assistance with medicines, dressing, personal hygiene and other daily requirements. We appreciate the support and care provided by the team."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <p class="text-white font-bold text-sm">Husband of a Former Resident</p>
+                            <p class="text-slate-400 text-xs">6-Month Resident at Umeed Care Centre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -677,11 +1654,92 @@
         <div class="absolute inset-0 bg-gradient-to-r from-umed-navy/90 via-umed-navy/60 to-transparent flex items-center px-6 md:px-16">
             <div class="max-w-xl text-white">
                 <span class="text-umed-gold font-bold uppercase tracking-wider text-xs block mb-2">Compassion in Every Step</span>
-                <h3 class="text-2xl md:text-4xl font-bold leading-tight mb-3">Because Every Life & Every Stage Matters.</h3>
+                <h3 class="text-2xl md:text-4xl font-bold leading-tight mb-3">Because Every Life &amp; Every Stage Matters.</h3>
                 <p class="text-slate-200 text-sm md:text-base mb-6">Our dedicated team is here to support you and your family with patience, dignity, and expert clinical care.</p>
                 <a href="#contact" class="bg-umed-red hover:bg-umed-red-dark text-white font-bold text-sm px-6 py-3 rounded-xl inline-block shadow-md transition-colors">
                     Talk With Admissions Today
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Families Trust Us Section -->
+    <section id="why-trust" class="py-20 md:py-28 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block uppercase tracking-wider text-xs font-bold text-umed-red bg-umed-red-50 px-3 py-1 rounded-md border border-umed-red/20 mb-3">
+                    Safety, Dignity &amp; Peace of Mind
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-umed-navy">
+                    Why Families Across Pune Choose Umed
+                </h2>
+                <p class="text-slate-600 text-base md:text-lg mt-3">
+                    We treat your family members with the utmost professional responsibility, transparent updates, and genuine human warmth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="p-7 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-umed-red text-white flex items-center justify-center font-bold mb-5 shadow-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-umed-navy mb-2.5">Oxygen Backup &amp; Emergency Cases</h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                            Equipped with 24/7 dedicated on-site oxygen backup (cylinders and concentrators), rapid clinical emergency management, and priority multi-specialty hospital tie-ups.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 mt-4 text-[11px] font-bold text-umed-red">
+                        24/7 Oxygen &amp; Emergency Response
+                    </div>
+                </div>
+
+                <div class="p-7 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-umed-navy text-white flex items-center justify-center font-bold mb-5 shadow-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-umed-navy mb-2.5">Emergency Call Bells &amp; CCTV</h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                            Every single room and bed is equipped with instant caregiver call bells and monitored with 24×7 CCTV systems for total safety and rapid medical response.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 mt-4 text-[11px] font-bold text-umed-navy">
+                        Instant Caregiver Alert
+                    </div>
+                </div>
+
+                <div class="p-7 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-umed-green text-white flex items-center justify-center font-bold mb-5 shadow-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-umed-navy mb-2.5">Consistent Staff Assignment</h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                            We don't rotate unfamiliar strangers daily. Our nurses and ward boys are assigned consistently so that meaningful trust and emotional bonding develop.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 mt-4 text-[11px] font-bold text-umed-green-dark">
+                        Familiar Caregivers Daily
+                    </div>
+                </div>
+
+                <div class="p-7 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-umed-gold-dark text-white flex items-center justify-center font-bold mb-5 shadow-xs">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-umed-navy mb-2.5">Charitable Trust Project</h3>
+                        <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+                            This is a project of OM Prathishthan Charitable Trust. Our clinical decisions prioritize patient wellbeing, dignity, and family accessibility over commercial pressure.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 mt-4 text-[11px] font-bold text-umed-gold-dark">
+                        Humanitarian Non-Profit Mission
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -841,7 +1899,7 @@
 
                             <div>
                                 <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Describe The Resident's Condition (Optional)</label>
-                                <textarea id="message" rows="4" placeholder="Mention age, mobility level, tube feeding needs, or any specific medical instructions..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all resize-none"></textarea>
+                                <textarea id="message" rows="4" placeholder="Mention age, mobility level, nasal feeding tube needs, or any specific medical instructions..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:bg-white focus:border-umed-red focus:ring-2 focus:ring-umed-red/20 focus:outline-none transition-all resize-none"></textarea>
                             </div>
 
                             <button type="submit" class="w-full bg-umed-red hover:bg-umed-red-dark text-white font-bold py-4 px-6 rounded-xl transition duration-200 shadow-md hover:shadow-lg text-base flex items-center justify-center gap-2">
@@ -882,12 +1940,13 @@
                     <h4 class="text-sm font-bold text-white uppercase tracking-wider">Healthcare Services</h4>
                     <ul class="text-sm space-y-2 text-slate-300">
                         <li><a href="#services" class="hover:text-white transition-colors">Long-Term Elder Care</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Qualified 24/7 Nurses</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Doctor Check-up & Vitals</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Qualified 24/7 Nurses &amp; Ward Boys</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Daily Doctor's Visit</a></li>
                         <li><a href="#services" class="hover:text-white transition-colors">Specialist Consultations</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Bedridden & Paralysis Support</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Customized & NG Feeding Diet</a></li>
-                        <li><a href="#services" class="hover:text-white transition-colors">Exercise & Back Care</a></li>
+                        <li><a href="#condition-protocols" class="hover:text-white transition-colors">Paralyzed &amp; Dementia Protocols</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Nutritious Care &amp; Nasal Feeding Tube</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Exercise, Yoga &amp; Physiotherapy</a></li>
+                        <li><a href="#condition-protocols" class="hover:text-white transition-colors">Bedsore Management Protocol</a></li>
                     </ul>
                 </div>
 
